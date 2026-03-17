@@ -1,0 +1,132 @@
+{
+  "last_updated": "2026-03-16T00:00:00.000000",
+  "updates_at": "8:00 AM Eastern",
+  "locals": {
+    "Alvinston": {
+      "count": 4,
+      "coaches": [
+        {
+          "name": "Adam Willemse",
+          "position": "18U C Assistant Coach",
+          "reg_id": "6339870"
+        },
+        {
+          "name": "Graham Goss",
+          "position": "13U DS Assistant Coach",
+          "reg_id": "6696338"
+        },
+        {
+          "name": "Jason Migchels",
+          "position": "15U DS Head Coach",
+          "reg_id": "5785614"
+        },
+        {
+          "name": "Paul Aarts",
+          "position": "18U C Head Coach",
+          "reg_id": "5900579"
+        }
+      ]
+    },
+    "Blenheim": {
+      "count": 14,
+      "coaches": [
+        {
+          "name": "Chris Knight",
+          "position": "13U D Assistant Coach",
+          "reg_id": "1062848"
+        },
+        {
+          "name": "Chris Vanneck",
+          "position": "11U D Assistant Coach",
+          "reg_id": "6165162"
+        },
+        {
+          "name": "Dan Farrow",
+          "position": "11U D Assistant Coach",
+          "reg_id": "6049029"
+        },
+        {
+          "name": "Dave Carey",
+          "position": "9U D Assistant coach",
+          "reg_id": "6833325"
+        },
+        {
+          "name": "Derek Stepniak",
+          "position": "15U D Assistant Coach",
+          "reg_id": "6430429"
+        },
+        {
+          "name": "Joe Liberty",
+          "position": "18U C Assistant Coach",
+          "reg_id": "6218247"
+        },
+        {
+          "name": "Kirk Vollans",
+          "position": "13U D Assistant Coach",
+          "reg_id": "6833219"
+        },
+        {
+          "name": "Mark Charron",
+          "position": "11U D Assistant Coach",
+          "reg_id": "6948914"
+        },
+        {
+          "name": "Matt Butzer",
+          "position": "18U C Head Coach",
+          "reg_id": "915423"
+        },
+        {
+          "name": "Matt Hall",
+          "position": "13U D Head Coach",
+          "reg_id": "5886048"
+        },
+        {
+          "name": "Noah Vanneck",
+          "position": "11U D Assistant Coach",
+          "reg_id": "6964240"
+        },
+        {
+          "name": "Owen Butzer",
+          "position": "15U D Assistant Coach",
+          "reg_id": "6833391"
+        }
+      ]
+    },
+    "Chatham": {
+      "count": 17,
+      "coaches": []
+    },
+    "Corunna": {
+      "count": 8,
+      "coaches": []
+    },
+    "Dresden": {
+      "count": 6,
+      "coaches": []
+    },
+    "Dutton": {
+      "count": 0,
+      "coaches": []
+    },
+    "Lambton Shores": {
+      "count": 8,
+      "coaches": []
+    },
+    "Port Lambton": {
+      "count": 10,
+      "coaches": []
+    },
+    "Sarnia": {
+      "count": 42,
+      "coaches": []
+    },
+    "Wallaceburg": {
+      "count": 7,
+      "coaches": []
+    },
+    "Wyoming": {
+      "count": 0,
+      "coaches": []
+    }
+  }
+}

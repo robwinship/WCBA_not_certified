@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCBA Outstanding Coach Certifications</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1e3050;
+            --secondary-color: #2563eb;
+            --accent-color: #f59e0b;
+            --light-bg: #f3f4f6;
+            --white: #ffffff;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --border: #e5e7eb;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            margin-top: 1rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .error {
+            background-color: #fee;
+            border: 1px solid #fcc;
+            color: #c33;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .locals-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .local-card {
+            background: var(--white);
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .local-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .local-card-header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: var(--white);
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .local-card-header h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: capitalize;
+        }
+
+        .coach-count {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--white);
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .local-card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: none;
+        }
+
+        .local-card-body.active {
+            display: block;
+        }
+
+        .coach-list {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .coach-item {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        .coach-item:last-child {
+            border-bottom: none;
+        }
+
+        .coach-name {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .coach-position {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .toggle-btn {
+            background: none;
+            border: none;
+            color: var(--white);
+            cursor: pointer;
+            font-size: 1.2rem;
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-btn.active {
+            transform: rotate(180deg);
+        }
+
+        .summary {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .summary-stat {
+            display: inline-block;
+            margin-right: 2rem;
+        }
+
+        .summary-stat strong {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .locals-container {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-light);
+            background: var(--white);
+            border-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Outstanding Coach Certifications</h1>
+        <p>Local Associations Summary</p>
+        <div class="meta">
+            <p>Coaches with outstanding certification requirements for the 2026 season</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="summary" id="summary">
+            <p>Loading data...</p>
+        </div>
+
+        <div class="loading" id="loading">
+            Loading coach data...
+        </div>
+
+        <div class="error" id="error" style="display: none;"></div>
+
+        <div class="locals-container" id="localsContainer"></div>
+
+        <div class="no-data" id="noData" style="display: none;">
+            <p>No coach data available. Please try again later.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Data source: <a href="https://www.registeroba.ca/certification-inprogress-by-local" target="_blank">Ontario Baseball Association</a></p>
+        <p>Last updated: <span id="lastUpdated">--</span></p>
+        <p style="margin-top: 1rem; opacity: 0.8;">Data updated daily at 8:00 AM Eastern</p>
+    </footer>
+
+    <script>
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                
+                const data = await response.json();
+                displayData(data);
+                document.getElementById('loading').style.display = 'none';
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = `Error loading data: ${error.message}`;
+                document.getElementById('noData').style.display = 'block';
+            }
+        }
+
+        function displayData(data) {
+            const container = document.getElementById('localsContainer');
+            const summary = document.getElementById('summary');
+            const lastUpdated = document.getElementById('lastUpdated');
+
+            if (!data.locals || Object.keys(data.locals).length === 0) {
+                document.getElementById('noData').style.display = 'block';
+                return;
+            }
+
+            // Calculate summary stats
+            let totalCoaches = 0;
+            let totalLocals = Object.keys(data.locals).length;
+
+            Object.values(data.locals).forEach(local => {
+                totalCoaches += local.count;
+            });
+
+            // Update last updated time
+            if (data.last_updated) {
+                const date = new Date(data.last_updated);
+                lastUpdated.textContent = date.toLocaleString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    timeZoneName: 'short'
+                });
+            }
+
+            // Update summary
+            summary.innerHTML = `
+                <div class="summary-stat">
+                    <strong>${totalLocals}</strong> Local Associations
+                </div>
+                <div class="summary-stat">
+                    <strong>${totalCoaches}</strong> Coaches Outstanding
+                </div>
+            `;
+
+            // Create cards for each local
+            Object.entries(data.locals).forEach(([localName, localData]) => {
+                const card = createCard(localName, localData);
+                container.appendChild(card);
+            });
+        }
+
+        function createCard(localName, localData) {
+            const card = document.createElement('div');
+            card.className = 'local-card';
+
+            const header = document.createElement('div');
+            header.className = 'local-card-header';
+
+            const title = document.createElement('h2');
+            title.textContent = localName;
+
+            const badge = document.createElement('span');
+            badge.className = 'coach-count';
+            badge.textContent = `${localData.count} ${localData.count === 1 ? 'coach' : 'coaches'}`;
+
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'toggle-btn';
+            toggleBtn.textContent = '▼';
+            toggleBtn.setAttribute('aria-label', 'Toggle details');
+
+            header.appendChild(title);
+            header.appendChild(badge);
+            header.appendChild(toggleBtn);
+
+            const body = document.createElement('div');
+            body.className = 'local-card-body';
+
+            const coachList = document.createElement('div');
+            coachList.className = 'coach-list';
+
+            localData.coaches.forEach(coach => {
+                const item = document.createElement('div');
+                item.className = 'coach-item';
+
+                const name = document.createElement('div');
+                name.className = 'coach-name';
+                name.textContent = coach.name;
+
+                const position = document.createElement('div');
+                position.className = 'coach-position';
+                position.textContent = coach.position;
+
+                item.appendChild(name);
+                item.appendChild(position);
+                coachList.appendChild(item);
+            });
+
+            body.appendChild(coachList);
+
+            card.appendChild(header);
+            card.appendChild(body);
+
+            // Toggle functionality
+            header.style.cursor = 'pointer';
+            header.addEventListener('click', () => {
+                body.classList.toggle('active');
+                toggleBtn.classList.toggle('active');
+            });
+
+            return card;
+        }
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
