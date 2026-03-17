@@ -1,6 +1,7 @@
 {
-  "last_updated": "2026-03-16T00:00:00.000000",
+  "last_updated": "2026-03-16T22:50:38.356409",
   "updates_at": "8:00 AM Eastern",
+  "total_coaches": 131,
   "locals": {
     "Alvinston": {
       "count": 4,
@@ -28,11 +29,16 @@
       ]
     },
     "Blenheim": {
-      "count": 14,
+      "count": 16,
       "coaches": [
         {
           "name": "Chris Knight",
           "position": "13U D Assistant Coach",
+          "reg_id": "1062848"
+        },
+        {
+          "name": "Chris Knight",
+          "position": "11U D Assistant Coach",
           "reg_id": "1062848"
         },
         {
@@ -56,6 +62,11 @@
           "reg_id": "6430429"
         },
         {
+          "name": "Derek Stepniak",
+          "position": "13U D Assistant Coach",
+          "reg_id": "6430429"
+        },
+        {
           "name": "Joe Liberty",
           "position": "18U C Assistant Coach",
           "reg_id": "6218247"
@@ -63,6 +74,16 @@
         {
           "name": "Kirk Vollans",
           "position": "13U D Assistant Coach",
+          "reg_id": "6833219"
+        },
+        {
+          "name": "Kirk Vollans",
+          "position": "11U D Assistant Coach",
+          "reg_id": "6833219"
+        },
+        {
+          "name": "Kirk Vollans",
+          "position": "9U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -94,15 +115,178 @@
     },
     "Chatham": {
       "count": 17,
-      "coaches": []
+      "coaches": [
+        {
+          "name": "Andy Stead",
+          "position": "12U B Assistant Coach",
+          "reg_id": "6682446"
+        },
+        {
+          "name": "Bill Atkinson",
+          "position": "10U B Assistant Coach",
+          "reg_id": "6539250"
+        },
+        {
+          "name": "Bryan Parker",
+          "position": "18U B Assistant Coach",
+          "reg_id": "6050614"
+        },
+        {
+          "name": "Chad Recker",
+          "position": "22U B Assistant Coach",
+          "reg_id": "6120702"
+        },
+        {
+          "name": "Chad Sherman",
+          "position": "12U B Assistant Coach",
+          "reg_id": "5708149"
+        },
+        {
+          "name": "Chris Giera",
+          "position": "9U B Assistant Coach",
+          "reg_id": "7008256"
+        },
+        {
+          "name": "Craig Smith",
+          "position": "10U B Assistant Coach",
+          "reg_id": "6450668"
+        },
+        {
+          "name": "Dave Smith",
+          "position": "22U B Assistant Coach",
+          "reg_id": "1224962"
+        },
+        {
+          "name": "Dave Vanmiddelkoop",
+          "position": "9U B Assistant Coach",
+          "reg_id": "6942005"
+        },
+        {
+          "name": "Ed Huynh",
+          "position": "10U B Assistant Coach",
+          "reg_id": "6784175"
+        },
+        {
+          "name": "Jeff Drexler",
+          "position": "8U B Head Coach",
+          "reg_id": "6169334"
+        },
+        {
+          "name": "Jonathan Presley",
+          "position": "13U B Assistant Coach",
+          "reg_id": "6220429"
+        },
+        {
+          "name": "Kevin Stead",
+          "position": "12U B Head Coach",
+          "reg_id": "6291538"
+        },
+        {
+          "name": "Mark Vandergriendt",
+          "position": "15U A Assistant Coach",
+          "reg_id": "6165461"
+        },
+        {
+          "name": "Mike Crow",
+          "position": "10U B Assistant Coach",
+          "reg_id": "6412607"
+        },
+        {
+          "name": "Pat Mcmahon",
+          "position": "14U B Head Coach",
+          "reg_id": "752682"
+        },
+        {
+          "name": "Shawn Delanghe",
+          "position": "22U B Assistant Coach",
+          "reg_id": "6223183"
+        }
+      ]
     },
     "Corunna": {
-      "count": 8,
-      "coaches": []
+      "count": 9,
+      "coaches": [
+        {
+          "name": "Adam Teschke",
+          "position": "9U D Assistant Coach",
+          "reg_id": "5703009"
+        },
+        {
+          "name": "Bob Bunda",
+          "position": "13U HS Assistant Coach",
+          "reg_id": "6953021"
+        },
+        {
+          "name": "Chuck Randall",
+          "position": "13U D Assistant Coach",
+          "reg_id": "6569961"
+        },
+        {
+          "name": "Jamie Bailey",
+          "position": "9U D Head Coach",
+          "reg_id": "5805212"
+        },
+        {
+          "name": "Marc Nead",
+          "position": "9U D Assistant Coach",
+          "reg_id": "6487931"
+        },
+        {
+          "name": "Mark Gibson",
+          "position": "11U D Head Coach",
+          "reg_id": "6690074"
+        },
+        {
+          "name": "Mark Mckillican",
+          "position": "11U D Assistant Coach",
+          "reg_id": "6844953"
+        },
+        {
+          "name": "Mike Barons",
+          "position": "13U HS Assistant Coach",
+          "reg_id": "6984815"
+        },
+        {
+          "name": "Tyler Young",
+          "position": "9U D Assistant Coach",
+          "reg_id": "1034777"
+        }
+      ]
     },
     "Dresden": {
       "count": 6,
-      "coaches": []
+      "coaches": [
+        {
+          "name": "Chad Van Dellen",
+          "position": "11U D Assistant Coach",
+          "reg_id": "6398148"
+        },
+        {
+          "name": "Erin Deline",
+          "position": "9U D Assistant Coach",
+          "reg_id": "6939591"
+        },
+        {
+          "name": "Greg Wolting",
+          "position": "11U D Assistant Coach",
+          "reg_id": "6410576"
+        },
+        {
+          "name": "Jeff Myers",
+          "position": "18U C Assistant Coach",
+          "reg_id": "5806558"
+        },
+        {
+          "name": "Jeremy Dell",
+          "position": "9U D Assistant Coach",
+          "reg_id": "6833202"
+        },
+        {
+          "name": "Jeremy Dell",
+          "position": "13U D Assistant Coach",
+          "reg_id": "6833202"
+        }
+      ]
     },
     "Dutton": {
       "count": 0,
@@ -110,23 +294,423 @@
     },
     "Lambton Shores": {
       "count": 8,
-      "coaches": []
+      "coaches": [
+        {
+          "name": "Andrew Adams",
+          "position": "9U DS Head Coach",
+          "reg_id": "6825072"
+        },
+        {
+          "name": "Bryan Richardson",
+          "position": "15U DS Assistant Coach",
+          "reg_id": "6285762"
+        },
+        {
+          "name": "Derek Smeekens",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "6233226"
+        },
+        {
+          "name": "Gary Mclellan",
+          "position": "15U DS Assistant Coach",
+          "reg_id": "6108085"
+        },
+        {
+          "name": "Jeremy Roder",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "6373455"
+        },
+        {
+          "name": "Kaylan Balcom",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "6511534"
+        },
+        {
+          "name": "Paul Van Lieshout",
+          "position": "9U DS Assistant Coach",
+          "reg_id": "5920160"
+        },
+        {
+          "name": "Phil Kerrigan",
+          "position": "9U DS Assistant Coach",
+          "reg_id": "6613905"
+        }
+      ]
     },
     "Port Lambton": {
-      "count": 10,
-      "coaches": []
+      "count": 9,
+      "coaches": [
+        {
+          "name": "Al Hillis",
+          "position": "18U A Assistant Coach",
+          "reg_id": "5680913"
+        },
+        {
+          "name": "Brian Riedel",
+          "position": "SENIOR C Assistant Coach",
+          "reg_id": "5855121"
+        },
+        {
+          "name": "Jamie Donahue",
+          "position": "15U D Assistant Coach",
+          "reg_id": "1106206"
+        },
+        {
+          "name": "Jeff Sterling",
+          "position": "22U B Assistant Coach",
+          "reg_id": "5825889"
+        },
+        {
+          "name": "Matt Johnston",
+          "position": "SENIOR C Head Coach",
+          "reg_id": "1151590"
+        },
+        {
+          "name": "Mike Lane",
+          "position": "22U B Assistant Coach",
+          "reg_id": "5823550"
+        },
+        {
+          "name": "Mike Lane",
+          "position": "18U A Assistant Coach",
+          "reg_id": "5823550"
+        },
+        {
+          "name": "Tom Van De Velde",
+          "position": "15U D Assistant Coach",
+          "reg_id": "6323890"
+        },
+        {
+          "name": "Tom Van De Velde",
+          "position": "13U D Assistant Coach",
+          "reg_id": "6323890"
+        }
+      ]
     },
     "Sarnia": {
-      "count": 42,
-      "coaches": []
+      "count": 43,
+      "coaches": [
+        {
+          "name": "Aaron Cassetta",
+          "position": "9U AA Head Coach",
+          "reg_id": "6761639"
+        },
+        {
+          "name": "Al Hillis",
+          "position": "16U AAA Assistant Coach",
+          "reg_id": "5680913"
+        },
+        {
+          "name": "Andrew Smith",
+          "position": "13U DS Assistant Coach",
+          "reg_id": "6797054"
+        },
+        {
+          "name": "Andrew Smith",
+          "position": "10U AA Assistant Coach",
+          "reg_id": "6797054"
+        },
+        {
+          "name": "Bill Best",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "6657552"
+        },
+        {
+          "name": "Brandon Palmer",
+          "position": "16U AAA Assistant Coach",
+          "reg_id": "6169197"
+        },
+        {
+          "name": "Brent Steeves",
+          "position": "10U A Assistant Coach",
+          "reg_id": "1226551"
+        },
+        {
+          "name": "Brett Gray",
+          "position": "10U AA Assistant Coach",
+          "reg_id": "1221803"
+        },
+        {
+          "name": "Brooke Campbell",
+          "position": "8U AA Assistant Coach",
+          "reg_id": "7018097"
+        },
+        {
+          "name": "Bruce Gray",
+          "position": "22U AAA Assistant Coach",
+          "reg_id": "616329"
+        },
+        {
+          "name": "Bryan Deschutter",
+          "position": "8U AA Assistant Coach",
+          "reg_id": "7073516"
+        },
+        {
+          "name": "Carl Best",
+          "position": "11U DS Head Coach",
+          "reg_id": "6959617"
+        },
+        {
+          "name": "Chris Hurst",
+          "position": "13U DS Assistant Coach",
+          "reg_id": "6620960"
+        },
+        {
+          "name": "Cody Webster",
+          "position": "13U DS Assistant Coach",
+          "reg_id": "6099001"
+        },
+        {
+          "name": "Cody Webster",
+          "position": "15U DS Assistant Coach",
+          "reg_id": "6099001"
+        },
+        {
+          "name": "Cole Randall",
+          "position": "10U A Assistant Coach",
+          "reg_id": "7054588"
+        },
+        {
+          "name": "Cory Sommise",
+          "position": "13U DS Assistant Coach",
+          "reg_id": "6851243"
+        },
+        {
+          "name": "Craig Helps",
+          "position": "10U AA Assistant Coach",
+          "reg_id": "1225857"
+        },
+        {
+          "name": "Dan Sparks",
+          "position": "16U AAA Assistant Coach",
+          "reg_id": "6169286"
+        },
+        {
+          "name": "Dave Aitken",
+          "position": "8U AA Assistant Coach",
+          "reg_id": "7032698"
+        },
+        {
+          "name": "David Kruger",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "6619569"
+        },
+        {
+          "name": "Evan Ouzounis",
+          "position": "8U AA Assistant Coach",
+          "reg_id": "7076015"
+        },
+        {
+          "name": "Greg Moore",
+          "position": "12U AA Assistant Coach",
+          "reg_id": "6369363"
+        },
+        {
+          "name": "Jason Polera",
+          "position": "16U AAA Assistant Coach",
+          "reg_id": "5868639"
+        },
+        {
+          "name": "Joel Ainsworth",
+          "position": "9U DS Assistant Coach",
+          "reg_id": "1230163"
+        },
+        {
+          "name": "Joel Hoadley",
+          "position": "9U DS Assistant Coach",
+          "reg_id": "6743083"
+        },
+        {
+          "name": "Joel Hoadley",
+          "position": "10U A Assistant Coach",
+          "reg_id": "6743083"
+        },
+        {
+          "name": "John Bettridge",
+          "position": "9U AA Assistant Coach",
+          "reg_id": "6702741"
+        },
+        {
+          "name": "Mick Jackson",
+          "position": "13U DS Head Coach",
+          "reg_id": "1245828"
+        },
+        {
+          "name": "Mike Damchuk",
+          "position": "9U AA Assistant Coach",
+          "reg_id": "6812287"
+        },
+        {
+          "name": "Owen Utley",
+          "position": "13U DS Assistant Coach",
+          "reg_id": "6934379"
+        },
+        {
+          "name": "Pete Juryn",
+          "position": "10U AA Assistant Coach",
+          "reg_id": "6657677"
+        },
+        {
+          "name": "Ryan Nutma",
+          "position": "15U AAA Assistant Coach",
+          "reg_id": "6342953"
+        },
+        {
+          "name": "Ryan Nutma",
+          "position": "16U AAA Assistant Coach",
+          "reg_id": "6342953"
+        },
+        {
+          "name": "Scott Smith",
+          "position": "16U AA Assistant Coach",
+          "reg_id": "6487076"
+        },
+        {
+          "name": "Shane Murphy",
+          "position": "11U AA Assistant Coach",
+          "reg_id": "6789905"
+        },
+        {
+          "name": "Steve Edwardson",
+          "position": "10U AA Assistant Coach",
+          "reg_id": "6670299"
+        },
+        {
+          "name": "Steve Helps",
+          "position": "14U AA Head Coach",
+          "reg_id": "6235933"
+        },
+        {
+          "name": "Steve Mcewen",
+          "position": "13U DS Assistant Coach",
+          "reg_id": "5992217"
+        },
+        {
+          "name": "Tara Webster",
+          "position": "13U DS Head Coach",
+          "reg_id": "6409903"
+        },
+        {
+          "name": "Tim Symington",
+          "position": "15U AA Assistant Coach",
+          "reg_id": "1191089"
+        },
+        {
+          "name": "Trevor Jamieson",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "6941236"
+        },
+        {
+          "name": "Wade Babula",
+          "position": "10U AA Assistant Coach",
+          "reg_id": "5678639"
+        }
+      ]
     },
     "Wallaceburg": {
-      "count": 7,
-      "coaches": []
+      "count": 6,
+      "coaches": [
+        {
+          "name": "Bill St. John",
+          "position": "9U D Assistant Coach",
+          "reg_id": "6596566"
+        },
+        {
+          "name": "Drew Walker",
+          "position": "9U D Assistant Coach",
+          "reg_id": "6789409"
+        },
+        {
+          "name": "Ken Roche",
+          "position": "13U D Assistant Coach",
+          "reg_id": "5678223"
+        },
+        {
+          "name": "Kevin Johnston",
+          "position": "11U D Assistant Coach",
+          "reg_id": "6132215"
+        },
+        {
+          "name": "Kristan Blair",
+          "position": "11U D Assistant Coach",
+          "reg_id": "960266"
+        },
+        {
+          "name": "Kristan Blair",
+          "position": "9U D Assistant Coach",
+          "reg_id": "960266"
+        }
+      ]
     },
     "Wyoming": {
-      "count": 0,
-      "coaches": []
+      "count": 13,
+      "coaches": [
+        {
+          "name": "Adam Campbell",
+          "position": "9U C Assistant Coach",
+          "reg_id": "7110738"
+        },
+        {
+          "name": "Adam Swan",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "5737146"
+        },
+        {
+          "name": "Eric Hyatt",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "6713335"
+        },
+        {
+          "name": "Jace Mccahill",
+          "position": "15U D Head Coach",
+          "reg_id": "5815363"
+        },
+        {
+          "name": "Justin Grift",
+          "position": "13U DS Head Coach",
+          "reg_id": "6310839"
+        },
+        {
+          "name": "Justin Jackson",
+          "position": "9U C Head Coach",
+          "reg_id": "7112905"
+        },
+        {
+          "name": "Kevin Helps",
+          "position": "SENIOR AA Assistant Coach",
+          "reg_id": "1034628"
+        },
+        {
+          "name": "Kevin Smits",
+          "position": "11U C Assistant Coach",
+          "reg_id": "5703067"
+        },
+        {
+          "name": "Nick Mccallum",
+          "position": "11U C Assistant Coach",
+          "reg_id": "6610225"
+        },
+        {
+          "name": "Stephen Szmiett",
+          "position": "9U C Assistant Coach",
+          "reg_id": "6754464"
+        },
+        {
+          "name": "Steve Helps",
+          "position": "SENIOR AA Assistant Coach",
+          "reg_id": "6235933"
+        },
+        {
+          "name": "Steve Helps",
+          "position": "11U C Assistant Coach",
+          "reg_id": "6235933"
+        },
+        {
+          "name": "Troy Gibbings",
+          "position": "11U DS Head Coach",
+          "reg_id": "6738499"
+        }
+      ]
     }
   }
 }

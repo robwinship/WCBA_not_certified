@@ -24,8 +24,10 @@ This site provides a summary view of coaches who have not yet completed their co
 ### 1. **Web Scraper** (`scraper.py`)
 - Runs automatically every day at 8:00 AM Eastern Time
 - Fetches the latest data from the [OBA Coach Certification page](https://www.registeroba.ca/certification-inprogress-by-local)
+- Uses Playwright plus Wix cloud-data responses for JavaScript-rendered content
+- Falls back between cloud-data and rendered HTML for better coverage
 - Filters data to include only the local associations listed above
-- Outputs results to `data.json`
+- Always includes all tracked locals in `data.json` (locals with no current rows remain at 0)
 
 ### 2. **GitHub Actions** (`.github/workflows/scrape-daily.yml`)
 - Scheduled to run the scraper daily
@@ -44,6 +46,8 @@ This site provides a summary view of coaches who have not yet completed their co
 - Python 3.7+
 - `requests` library: `pip install requests`
 - `beautifulsoup4` library: `pip install beautifulsoup4`
+- `playwright` library: `pip install playwright`
+- Playwright browser install: `python -m playwright install chromium`
 
 ### Running the Scraper Locally
 ```bash
@@ -146,9 +150,9 @@ All CSS is embedded in `index.html`. Modify the `<style>` section to customize c
 ### Scraper Not Finding Coaches
 The website structure may have changed:
 1. Run the scraper locally to debug
-2. Check for BeautifulSoup parse errors
+2. Verify Playwright browser install (`python -m playwright install chromium`)
 3. Verify the OBA URL structure hasn't changed
-4. Update CSS selectors in `scraper.py` if needed
+4. Check logs for cloud-data/API or HTML fallback parsing messages
 
 ## Git Configuration
 
