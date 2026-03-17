@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 import json
 from datetime import datetime
 import sys
+import time
 
 # Target cities/locals (case-insensitive)
 TARGET_LOCALS = {
@@ -35,8 +36,10 @@ def scrape_coaches():
     
     try:
         print(f"Fetching {url}...")
-        response = requests.get(url, headers=headers, timeout=10)
+        response = requests.get(url, headers=headers, timeout=30)
         response.raise_for_status()
+        print("Waiting for page to fully load...")
+        time.sleep(8)  # Wait 8 seconds for page to render all data
     except requests.RequestException as e:
         print(f"Error fetching webpage: {e}", file=sys.stderr)
         return None
