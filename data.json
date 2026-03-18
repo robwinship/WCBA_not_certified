@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-03-17T13:45:14.561931",
+  "last_updated": "2026-03-18T13:46:47.978886",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 131,
+  "total_coaches": 127,
   "locals": {
     "Alvinston": {
       "count": 4,
@@ -29,17 +29,12 @@
       ]
     },
     "Blenheim": {
-      "count": 16,
+      "count": 15,
       "coaches": [
         {
           "name": "Chris Knight",
-          "position": "13U D Assistant Coach",
-          "reg_id": "1062848"
-        },
-        {
-          "name": "Chris Knight",
           "position": "11U D Assistant Coach",
-          "reg_id": "1062848"
+          "reg_id": "6469033"
         },
         {
           "name": "Chris Vanneck",
@@ -73,7 +68,7 @@
         },
         {
           "name": "Kirk Vollans",
-          "position": "13U D Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -83,7 +78,7 @@
         },
         {
           "name": "Kirk Vollans",
-          "position": "9U D Assistant Coach",
+          "position": "13U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -114,7 +109,7 @@
       ]
     },
     "Chatham": {
-      "count": 17,
+      "count": 16,
       "coaches": [
         {
           "name": "Andy Stead",
@@ -190,11 +185,6 @@
           "name": "Mike Crow",
           "position": "10U B Assistant Coach",
           "reg_id": "6412607"
-        },
-        {
-          "name": "Pat Mcmahon",
-          "position": "14U B Head Coach",
-          "reg_id": "752682"
         },
         {
           "name": "Shawn Delanghe",
@@ -338,7 +328,7 @@
       ]
     },
     "Port Lambton": {
-      "count": 9,
+      "count": 7,
       "coaches": [
         {
           "name": "Al Hillis",
@@ -374,16 +364,6 @@
           "name": "Mike Lane",
           "position": "18U A Assistant Coach",
           "reg_id": "5823550"
-        },
-        {
-          "name": "Tom Van De Velde",
-          "position": "15U D Assistant Coach",
-          "reg_id": "6323890"
-        },
-        {
-          "name": "Tom Van De Velde",
-          "position": "13U D Assistant Coach",
-          "reg_id": "6323890"
         }
       ]
     },
@@ -402,12 +382,12 @@
         },
         {
           "name": "Andrew Smith",
-          "position": "13U DS Assistant Coach",
+          "position": "10U AA Assistant Coach",
           "reg_id": "6797054"
         },
         {
           "name": "Andrew Smith",
-          "position": "10U AA Assistant Coach",
+          "position": "13U DS Assistant Coach",
           "reg_id": "6797054"
         },
         {
@@ -632,12 +612,12 @@
         },
         {
           "name": "Kristan Blair",
-          "position": "11U D Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "960266"
         },
         {
           "name": "Kristan Blair",
-          "position": "9U D Assistant Coach",
+          "position": "11U D Assistant Coach",
           "reg_id": "960266"
         }
       ]
@@ -647,7 +627,7 @@
       "coaches": [
         {
           "name": "Adam Campbell",
-          "position": "9U C Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "7110738"
         },
         {
@@ -662,7 +642,7 @@
         },
         {
           "name": "Jace Mccahill",
-          "position": "15U D Head Coach",
+          "position": "15U B Head Coach",
           "reg_id": "5815363"
         },
         {
@@ -672,7 +652,7 @@
         },
         {
           "name": "Justin Jackson",
-          "position": "9U C Head Coach",
+          "position": "9U D Head Coach",
           "reg_id": "7112905"
         },
         {
@@ -682,17 +662,17 @@
         },
         {
           "name": "Kevin Smits",
-          "position": "11U C Assistant Coach",
+          "position": "11U D Assistant Coach",
           "reg_id": "5703067"
         },
         {
           "name": "Nick Mccallum",
-          "position": "11U C Assistant Coach",
+          "position": "11U D Assistant Coach",
           "reg_id": "6610225"
         },
         {
           "name": "Stephen Szmiett",
-          "position": "9U C Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "6754464"
         },
         {
@@ -702,7 +682,7 @@
         },
         {
           "name": "Steve Helps",
-          "position": "11U C Assistant Coach",
+          "position": "11U D Assistant Coach",
           "reg_id": "6235933"
         },
         {
