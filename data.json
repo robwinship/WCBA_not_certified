@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-03-31T13:55:27.556180",
+  "last_updated": "2026-04-01T13:57:48.494434",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 126,
+  "total_coaches": 123,
   "locals": {
     "Alvinston": {
       "count": 4,
@@ -53,12 +53,12 @@
         },
         {
           "name": "Derek Stepniak",
-          "position": "13U D Assistant Coach",
+          "position": "15U D Assistant Coach",
           "reg_id": "6430429"
         },
         {
           "name": "Derek Stepniak",
-          "position": "15U D Assistant Coach",
+          "position": "13U D Assistant Coach",
           "reg_id": "6430429"
         },
         {
@@ -68,7 +68,7 @@
         },
         {
           "name": "Kirk Vollans",
-          "position": "13U D Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -78,7 +78,7 @@
         },
         {
           "name": "Kirk Vollans",
-          "position": "9U D Assistant Coach",
+          "position": "13U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -109,7 +109,7 @@
       ]
     },
     "Chatham": {
-      "count": 15,
+      "count": 13,
       "coaches": [
         {
           "name": "Andy Stead",
@@ -135,11 +135,6 @@
           "name": "Chad Sherman",
           "position": "12U B Assistant Coach",
           "reg_id": "5708149"
-        },
-        {
-          "name": "Chris Giera",
-          "position": "9U B Assistant Coach",
-          "reg_id": "7008256"
         },
         {
           "name": "Craig Smith",
@@ -170,11 +165,6 @@
           "name": "Jonathan Presley",
           "position": "13U B Assistant Coach",
           "reg_id": "6220429"
-        },
-        {
-          "name": "Kevin Stead",
-          "position": "12U B Head Coach",
-          "reg_id": "6291538"
         },
         {
           "name": "Mark Vandergriendt",
@@ -263,12 +253,12 @@
         },
         {
           "name": "Jeremy Dell",
-          "position": "13U D Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "6833202"
         },
         {
           "name": "Jeremy Dell",
-          "position": "9U D Assistant Coach",
+          "position": "13U D Assistant Coach",
           "reg_id": "6833202"
         }
       ]
@@ -352,18 +342,18 @@
         },
         {
           "name": "Mike Lane",
-          "position": "18U A Assistant Coach",
+          "position": "22U B Assistant Coach",
           "reg_id": "5823550"
         },
         {
           "name": "Mike Lane",
-          "position": "22U B Assistant Coach",
+          "position": "18U A Assistant Coach",
           "reg_id": "5823550"
         }
       ]
     },
     "Sarnia": {
-      "count": 43,
+      "count": 42,
       "coaches": [
         {
           "name": "Aaron Cassetta",
@@ -389,11 +379,6 @@
           "name": "Bill Best",
           "position": "11U DS Assistant Coach",
           "reg_id": "6657552"
-        },
-        {
-          "name": "Brandon Palmer",
-          "position": "16U AAA Assistant Coach",
-          "reg_id": "6169197"
         },
         {
           "name": "Brent Steeves",
@@ -492,12 +477,12 @@
         },
         {
           "name": "Joel Hoadley",
-          "position": "10U A Assistant Coach",
+          "position": "9U DS Assistant Coach",
           "reg_id": "6743083"
         },
         {
           "name": "Joel Hoadley",
-          "position": "9U DS Assistant Coach",
+          "position": "10U A Assistant Coach",
           "reg_id": "6743083"
         },
         {
@@ -672,12 +657,12 @@
         },
         {
           "name": "Steve Helps",
-          "position": "11U D Assistant Coach",
+          "position": "SENIOR AA Assistant Coach",
           "reg_id": "6235933"
         },
         {
           "name": "Steve Helps",
-          "position": "SENIOR AA Assistant Coach",
+          "position": "11U D Assistant Coach",
           "reg_id": "6235933"
         },
         {
