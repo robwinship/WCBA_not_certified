@@ -1,0 +1,23 @@
+{
+  "last_updated": "2026-03-31T05:31:43.268062",
+  "associations": {
+    "Sarnia Brigade": [
+      {
+        "role": "President",
+        "name": "Past",
+        "phone": "",
+        "email": ""
+      }
+    ],
+    "Alvinston Minor Ball": [],
+    "Blenheim Minor Baseball": [],
+    "Camlachie Athletic Association": [
+      {
+        "role": "Secretary",
+        "name": "Coach",
+        "phone": "",
+        "email": ""
+      }
+    ]
+  }
+}

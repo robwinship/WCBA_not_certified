@@ -253,22 +253,54 @@
         </div>
     </header>
 
+    <nav style="background: var(--white); border-bottom: 1px solid var(--border);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; gap: 2rem; padding: 0.5rem 2rem;">
+            <button id="tab-coaches" class="tab-btn" style="background: none; border: none; font-size: 1.1rem; padding: 0.5rem 1rem; cursor: pointer; border-bottom: 3px solid var(--secondary-color); font-weight: 600;">Outstanding Coaches</button>
+            <button id="tab-executives" class="tab-btn" style="background: none; border: none; font-size: 1.1rem; padding: 0.5rem 1rem; cursor: pointer; border-bottom: 3px solid transparent; font-weight: 600;">Executives</button>
+        </div>
+    </nav>
+
     <main>
-        <div class="summary" id="summary">
-            <p>Loading data...</p>
-        </div>
+        <section id="coaches-section">
+            <div class="summary" id="summary">
+                <p>Loading data...</p>
+            </div>
 
-        <div class="loading" id="loading">
-            Loading coach data...
-        </div>
+            <div class="loading" id="loading">
+                Loading coach data...
+            </div>
 
-        <div class="error" id="error" style="display: none;"></div>
+            <div class="error" id="error" style="display: none;"></div>
 
-        <div class="locals-container" id="localsContainer"></div>
+            <div class="locals-container" id="localsContainer"></div>
 
-        <div class="no-data" id="noData" style="display: none;">
-            <p>No coach data available. Please try again later.</p>
-        </div>
+            <div class="no-data" id="noData" style="display: none;">
+                <p>No coach data available. Please try again later.</p>
+            </div>
+        </section>
+
+        <section id="executives-section" style="display:none; max-width:1200px; margin:2rem auto;">
+            <div class="summary" style="margin-bottom:1.5rem;">
+                <strong>Executive Staff Summary</strong>
+                <p>Roles, names, and contact info for local association executives.</p>
+            </div>
+            <div style="overflow-x:auto;">
+                <table style="width:100%; border-collapse:collapse; background:var(--white); border-radius:0.75rem; box-shadow:0 2px 8px rgba(0,0,0,0.07);">
+                    <thead style="background:var(--light-bg);">
+                        <tr>
+                            <th style="padding:0.75rem; border-bottom:1px solid var(--border); text-align:left;">Association</th>
+                            <th style="padding:0.75rem; border-bottom:1px solid var(--border); text-align:left;">Role</th>
+                            <th style="padding:0.75rem; border-bottom:1px solid var(--border); text-align:left;">Name</th>
+                            <th style="padding:0.75rem; border-bottom:1px solid var(--border); text-align:left;">Phone</th>
+                            <th style="padding:0.75rem; border-bottom:1px solid var(--border); text-align:left;">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Executive data will be loaded dynamically by executives.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -277,12 +309,41 @@
         <p style="margin-top: 1rem; opacity: 0.8;">Data updated daily at 8:00 AM Eastern</p>
     </footer>
 
+    <script src="executives.js"></script>
     <script>
+        // Tab switching logic
+        function showTab(tab) {
+            const coachesSection = document.getElementById('coaches-section');
+            const executivesSection = document.getElementById('executives-section');
+            const tabCoaches = document.getElementById('tab-coaches');
+            const tabExecutives = document.getElementById('tab-executives');
+            if (tab === 'coaches') {
+                coachesSection.style.display = '';
+                executivesSection.style.display = 'none';
+                tabCoaches.style.borderBottom = '3px solid var(--secondary-color)';
+                tabExecutives.style.borderBottom = '3px solid transparent';
+            } else {
+                coachesSection.style.display = 'none';
+                executivesSection.style.display = '';
+                tabCoaches.style.borderBottom = '3px solid transparent';
+                tabExecutives.style.borderBottom = '3px solid var(--secondary-color)';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab event listeners
+            document.getElementById('tab-coaches').addEventListener('click', function() { showTab('coaches'); });
+            document.getElementById('tab-executives').addEventListener('click', function() { showTab('executives'); });
+            // Default to coaches tab
+            showTab('coaches');
+            // Load coach data
+            loadData();
+        });
+
         async function loadData() {
             try {
                 const response = await fetch('data.json');
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                
                 const data = await response.json();
                 displayData(data);
                 document.getElementById('loading').style.display = 'none';
@@ -299,20 +360,16 @@
             const container = document.getElementById('localsContainer');
             const summary = document.getElementById('summary');
             const lastUpdated = document.getElementById('lastUpdated');
-
             if (!data.locals || Object.keys(data.locals).length === 0) {
                 document.getElementById('noData').style.display = 'block';
                 return;
             }
-
             // Calculate summary stats
             let totalCoaches = 0;
             let totalLocals = Object.keys(data.locals).length;
-
             Object.values(data.locals).forEach(local => {
                 totalCoaches += local.count;
             });
-
             // Update last updated time
             if (data.last_updated) {
                 const date = new Date(data.last_updated);
@@ -326,7 +383,6 @@
                     timeZoneName: 'short'
                 });
             }
-
             // Update summary
             summary.innerHTML = `
                 <div class="summary-stat">
@@ -336,7 +392,6 @@
                     <strong>${totalCoaches}</strong> Coaches Outstanding
                 </div>
             `;
-
             // Create cards for each local
             Object.entries(data.locals).forEach(([localName, localData]) => {
                 const card = createCard(localName, localData);
@@ -347,66 +402,45 @@
         function createCard(localName, localData) {
             const card = document.createElement('div');
             card.className = 'local-card';
-
             const header = document.createElement('div');
             header.className = 'local-card-header';
-
             const title = document.createElement('h2');
             title.textContent = localName;
-
             const badge = document.createElement('span');
             badge.className = 'coach-count';
             badge.textContent = `${localData.count} ${localData.count === 1 ? 'coach' : 'coaches'}`;
-
             const toggleBtn = document.createElement('button');
             toggleBtn.className = 'toggle-btn';
             toggleBtn.textContent = '▼';
             toggleBtn.setAttribute('aria-label', 'Toggle details');
-
             header.appendChild(title);
             header.appendChild(badge);
             header.appendChild(toggleBtn);
-
             const body = document.createElement('div');
             body.className = 'local-card-body';
-
             const coachList = document.createElement('div');
             coachList.className = 'coach-list';
-
             localData.coaches.forEach(coach => {
                 const item = document.createElement('div');
                 item.className = 'coach-item';
-
                 const name = document.createElement('div');
                 name.className = 'coach-name';
                 name.textContent = coach.name;
-
                 const position = document.createElement('div');
                 position.className = 'coach-position';
                 position.textContent = coach.position;
-
                 item.appendChild(name);
                 item.appendChild(position);
                 coachList.appendChild(item);
             });
-
             body.appendChild(coachList);
-
             card.appendChild(header);
             card.appendChild(body);
-
             // Toggle functionality
             header.style.cursor = 'pointer';
             header.addEventListener('click', () => {
                 body.classList.toggle('active');
                 toggleBtn.classList.toggle('active');
             });
-
             return card;
         }
-
-        // Load data when page loads
-        document.addEventListener('DOMContentLoaded', loadData);
-    </script>
-</body>
-</html>
