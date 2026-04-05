@@ -1,186 +1,262 @@
 import json
 import re
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 from playwright.sync_api import sync_playwright
 from datetime import datetime
 from pathlib import Path
 
-# List of associations and their executive/staff URLs
+# All 12 WCBA member associations and their Staff page URLs
+# All sites run on the mbsportsweb.ca platform with identical HTML structure
 ASSOCIATIONS = [
-    {
-        "name": "Sarnia Brigade",
-        "url": "https://sarniabrigade.ca/Staff/1003/"
-    },
-    {
-        "name": "Alvinston Minor Ball",
-        "url": "https://alvinstonminorball.ca/Contact/1005/"
-    },
-    {
-        "name": "Blenheim Minor Baseball",
-        "url": "https://blenheimminorbaseball.com/Staff/1113/"
-    },
-    {
-        "name": "Camlachie Athletic Association",
-        "url": "https://camlachieathleticassociation.ca/Staff/1003/"
-    }
+    {"name": "Sarnia Brigade",                 "url": "https://sarniabrigade.ca/Staff/1003/"},
+    {"name": "Alvinston Minor Ball",            "url": "https://alvinstonminorball.ca/Staff/1003/"},
+    {"name": "Wallaceburg Minor Ball",          "url": "https://wallaceburgminorball.ca/Staff/1003/"},
+    {"name": "Corunna Minor Baseball",          "url": "https://corunnaminorbaseball.com/Staff/1003/"},
+    {"name": "Dresden Minor Ball",              "url": "https://dresdenminorball.com/Staff/1003/"},
+    {"name": "Chatham Minor Baseball",          "url": "https://chathamminorbaseball.com/Staff/1103/"},
+    {"name": "Lambton Shores Minor Ball",       "url": "https://lambtonshoresminorball.ca/Staff/1003/"},
+    {"name": "Wyoming Minor Ball",              "url": "https://wyomingminorball.ca/Staff/1055/"},
+    {"name": "Blenheim Minor Baseball",         "url": "https://blenheimminorbaseball.com/Staff/1113/"},
+    {"name": "Camlachie Athletic Association",  "url": "https://camlachieathleticassociation.ca/Staff/1003/"},
+    {"name": "Dutton Royals",                   "url": "https://duttonroyals.com/Staff/1113/"},
+    {"name": "Port Lambton Pirates",            "url": "https://portlambtonpirates.ca/Staff/1023/"},
 ]
 
 OUTPUT_FILE = Path("executives.json")
 
-# Helper to extract email from a mailto link
-EMAIL_RE = re.compile(r"mailto:([\w\.-]+@[\w\.-]+)")
-PHONE_RE = re.compile(r"(\d{3}[ -]?\d{3}[ -]?\d{4})")
+EMAIL_RE = re.compile(r"mailto:([\w\.\+\-]+@[\w\.\-]+)", re.I)
+PHONE_RE = re.compile(r"(\(?\d{3}\)?[\s.\-]?\d{3}[\s.\-]?\d{4})")
+VCARD_RE = re.compile(r"/vcard/staff/", re.I)
 
-def extract_executives(assoc):
-    # Use Playwright to get fully rendered HTML
+# Role patterns ordered most-specific first; each maps to a canonical display name.
+# "tre[sa]urer" handles Blenheim's misspelling "TRESURER".
+ROLE_PATTERNS = [
+    (r"(?:1st|first)\s+vice[\s\-]?president",  "Vice President"),
+    (r"(?:2nd|second)\s+vice[\s\-]?president", "Vice President"),
+    (r"vice[\s\-]?president",                  "Vice President"),
+    (r"president",                              "President"),
+    (r"secretary",                              "Secretary"),
+    (r"tre[sa]urer",                            "Treasurer"),
+]
+ROLE_ORDER = ["President", "Vice President", "Secretary", "Treasurer"]
+
+
+def fetch_html(url: str) -> str:
+    """Return fully-rendered HTML for url using headless Chromium."""
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
-        page.goto(assoc["url"], wait_until="domcontentloaded", timeout=60000)
-        page.wait_for_timeout(6000)
+        page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        page.wait_for_timeout(5000)
         try:
-            page.wait_for_load_state("networkidle", timeout=30000)
+            page.wait_for_load_state("networkidle", timeout=20000)
         except Exception:
             pass
         html = page.content()
         browser.close()
-    soup = BeautifulSoup(html, "html.parser")
-    rows = []
+    return html
 
-    # 1. Special handling for Alvinston Minor Ball: extract name and role from text after mailto
-    if assoc["name"] == "Alvinston Minor Ball":
-        # Find all mailto links and extract name, role, email from nearby text
-        for a in soup.find_all("a", href=EMAIL_RE):
-            email_match = EMAIL_RE.search(a["href"])
-            email = email_match.group(1) if email_match else ""
-            # The parent is likely a div, get previous siblings for name/role
-            parent = a.find_parent()
-            # Get all text before the mailto link in the parent
-            text = ""
-            for elem in parent.contents:
-                if elem == a:
-                    break
-                if isinstance(elem, str):
-                    text += elem.strip() + " "
-                elif hasattr(elem, 'get_text'):
-                    text += elem.get_text(" ", strip=True) + " "
-            text = text.strip()
-            # Try to extract name and role (e.g., 'Andy Triest President')
-            m = re.match(r"([A-Za-z .'-]+)\s+([A-Za-z ]+)$", text)
-            if m:
-                name = m.group(1).strip()
-                role = m.group(2).strip()
-            else:
-                name = text
-                role = ""
-            rows.append({
-                "role": role,
-                "name": name,
-                "phone": "",
-                "email": email
-            })
-    else:
-        # 1. Try to extract from mailto links (most reliable for email/name/role)
-        for a in soup.find_all("a", href=EMAIL_RE):
-            email_match = EMAIL_RE.search(a["href"])
-            email = email_match.group(1) if email_match else ""
-            parent = a.find_parent()
-            text = parent.get_text(" ", strip=True)
-            role_match = re.search(r"(president|treasurer|secretary|vice[- ]?president|registrar|scheduler)", text, re.I)
-            role = role_match.group(0).title() if role_match else "Executive"
-            name = ""
-            name_match = re.search(r"([A-Z][A-Za-z .'-]+)[^A-Za-z]*(?=" + role + ")", text)
-            if name_match:
-                name = name_match.group(1).strip()
-            else:
-                name_match = re.search(r"([A-Z][A-Za-z .'-]+)[^A-Za-z]*(?=" + email + ")", text)
-                if name_match:
-                    name = name_match.group(1).strip()
-            phone = ""
-            phone_match = PHONE_RE.search(text)
-            if phone_match:
-                phone = phone_match.group(1)
-            rows.append({
-                "role": role,
-                "name": name,
-                "phone": phone,
-                "email": email
-            })
 
-    # 2. Try to extract from tables (for Blenheim and similar)
-    for table in soup.find_all("table"):
-        for tr in table.find_all("tr"):
-            cells = [td.get_text(" ", strip=True) for td in tr.find_all("td")]
-            if len(cells) >= 3:
-                # Heuristic: Role, Name, Email/Phone
-                role = cells[0].title()
-                name = cells[1].strip()
-                email = ""
-                phone = ""
-                for c in cells[2:]:
-                    if EMAIL_RE.search(c):
-                        email = EMAIL_RE.search(c).group(1)
-                    if PHONE_RE.search(c):
-                        phone = PHONE_RE.search(c).group(1)
-                if name and role:
-                    rows.append({
-                        "role": role,
-                        "name": name,
-                        "phone": phone,
-                        "email": email
-                    })
+def find_person_container(vcard_a):
+    """
+    Walk UP the DOM from a vCard link until reaching a container that has
+    MORE than one vCard link — then return the previous (single-vcard) level.
+    That level is the per-person card.
+    """
+    last_single = vcard_a.parent or vcard_a
+    current = vcard_a.parent
+    while current is not None and current.parent is not None:
+        n = len(current.find_all("a", href=VCARD_RE))
+        if n == 1:
+            last_single = current   # still one person at this level — keep going up
+        elif n > 1:
+            break                   # crossed into multi-person container — stop
+        current = current.parent
+    return last_single
 
-    # 3. Try to extract from divs/spans with role keywords
-    for tag in soup.find_all(string=re.compile(r"president|treasurer|secretary|vice", re.I)):
-        parent = tag.find_parent()
-        if not parent:
+
+def get_text_after_vcard(vcard_a, container) -> str:
+    """
+    Return text nodes that appear in document order AFTER the vCard link
+    and BEFORE the next Email or vCard link, all within container.
+    This skips UI labels ("Email", "Send", "CELL PHONE") that appear before
+    the vCard and isolates the name + role text that follows it.
+    """
+    parts = []
+    recording = False
+    for elem in container.descendants:
+        if elem is vcard_a:
+            recording = True
             continue
-        text = parent.get_text(" ", strip=True)
-        role_match = re.search(r"(president|treasurer|secretary|vice[- ]?president|registrar|scheduler)", text, re.I)
-        role = role_match.group(0).title() if role_match else "Executive"
-        name = ""
-        name_match = re.search(r"([A-Z][A-Za-z .'-]+)[^A-Za-z]*(?=" + role + ")", text)
-        if name_match:
-            name = name_match.group(1).strip()
-        email = ""
-        mailto = parent.find("a", href=EMAIL_RE)
-        if mailto:
-            email_match = EMAIL_RE.search(mailto["href"])
-            if email_match:
-                email = email_match.group(1)
-        phone = ""
-        phone_match = PHONE_RE.search(text)
-        if phone_match:
-            phone = phone_match.group(1)
-        if name and role:
-            rows.append({
-                "role": role,
-                "name": name,
-                "phone": phone,
-                "email": email
-            })
+        if not recording:
+            continue
+        # Stop when we hit the next person's Email or vCard link
+        if hasattr(elem, "name") and elem.name == "a":
+            href = elem.get("href", "")
+            if VCARD_RE.search(href) or EMAIL_RE.search(href):
+                break
+        if isinstance(elem, NavigableString):
+            # Skip text inside ANY ancestor <a> tag (handles nested spans etc.)
+            if any(getattr(p, "name", None) == "a" for p in elem.parents):
+                continue
+            if elem.parent and elem.parent.name in ("script", "style", "button"):
+                continue
+            t = str(elem).strip()
+            if t:
+                parts.append(t)
+    return " ".join(parts)
 
-    # Remove duplicates
+
+def parse_name_role(text: str):
+    """
+    Scan text for a target role keyword; return (name, display_role) or (None, None).
+    Name is everything before the role match, cleaned up.
+    """
+    for pattern, display in ROLE_PATTERNS:
+        m = re.search(pattern, text, re.I)
+        if not m:
+            continue
+        # Exclude "Past President"
+        prefix = text[max(0, m.start() - 10):m.start()].lower()
+        if re.search(r"\bpast\b", prefix):
+            continue
+        name_raw = text[:m.start()]
+        # Remove common page artefacts
+        name_raw = re.sub(r"CELL\s+PHONE", " ", name_raw, flags=re.I)
+        name_raw = PHONE_RE.sub(" ", name_raw)
+        name = re.sub(r"\s+", " ", name_raw).strip()
+        if name:
+            return name, display
+    return None, None
+
+
+def extract_via_vcards(soup) -> list:
+    """
+    Primary extraction path for mbsportsweb.ca sites:
+    Every staff member has a vCard link; we anchor on that to find the
+    per-person container, then pull email, phone, name, and role.
+    """
+    results = []
     seen = set()
-    unique_rows = []
-    for row in rows:
-        key = (row["role"].lower(), row["name"].lower())
-        if key not in seen and row["name"]:
-            unique_rows.append(row)
+
+    for vcard_a in soup.find_all("a", href=VCARD_RE):
+        container = find_person_container(vcard_a)
+
+        # Email — from mailto: link inside the container
+        email = ""
+        mailto_a = container.find("a", href=EMAIL_RE)
+        if mailto_a:
+            m = EMAIL_RE.search(mailto_a["href"])
+            if m:
+                email = m.group(1)
+
+        # Phone — from full text (tel: links and plain text)
+        phone = ""
+        pm = PHONE_RE.search(container.get_text(" ", strip=True))
+        if pm:
+            phone = pm.group(1)
+
+        # Name + Role — from text that follows the vCard link (skips "Send", "Email" labels)
+        clean = get_text_after_vcard(vcard_a, container)
+        name, role = parse_name_role(clean)
+        if not role or not name:
+            continue
+
+        key = (role.lower(), name.lower())
+        if key in seen:
+            continue
+        seen.add(key)
+
+        results.append({
+            "role": role,
+            "name": name.title(),
+            "phone": phone,
+            "email": email,
+        })
+
+    return results
+
+
+def extract_via_text(soup) -> list:
+    """
+    Fallback for sites (e.g. Blenheim) that list executives as plain text
+    rather than using the vCard module.
+    Pattern expected: ROLE  Name  email  (tab/multi-space delimited)
+    """
+    results = []
+    seen = set()
+    full = soup.get_text("\n", strip=True)
+
+    for line in full.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        for pattern, display in ROLE_PATTERNS:
+            m = re.match(r"\s*" + pattern, line, re.I)
+            if not m:
+                continue
+            # Exclude past president
+            if re.search(r"\bpast\b", line[:m.start()], re.I):
+                continue
+            # After the role keyword, split remainder by tabs or 3+ spaces
+            remainder = line[m.end():]
+            parts = [p.strip() for p in re.split(r"\t+|\s{3,}", remainder) if p.strip()]
+            if not parts:
+                continue
+            name = parts[0]
+            email = next((p for p in parts[1:] if "@" in p), "")
+            if len(name) < 3:
+                continue
+            key = (display.lower(), name.lower())
+            if key in seen:
+                continue
             seen.add(key)
-    return unique_rows
+            results.append({
+                "role": display,
+                "name": name.title(),
+                "phone": "",
+                "email": email,
+            })
+            break
+
+    return results
+
+
+def extract_executives(assoc: dict) -> list:
+    html = fetch_html(assoc["url"])
+    soup = BeautifulSoup(html, "html.parser")
+
+    results = extract_via_vcards(soup)
+    if not results:
+        results = extract_via_text(soup)
+
+    results.sort(key=lambda r: (
+        ROLE_ORDER.index(r["role"]) if r["role"] in ROLE_ORDER else 99,
+        r["name"]
+    ))
+    return results
+
 
 def main():
     all_execs = {}
     for assoc in ASSOCIATIONS:
-        execs = extract_executives(assoc)
+        print(f"Scraping {assoc['name']}...")
+        try:
+            execs = extract_executives(assoc)
+        except Exception as e:
+            print(f"  ERROR: {e}")
+            execs = []
         all_execs[assoc["name"]] = execs
+        print(f"  Found {len(execs)}: {[e['role'] for e in execs]}")
+
     output = {
         "last_updated": datetime.now().isoformat(),
-        "associations": all_execs
+        "associations": all_execs,
     }
     OUTPUT_FILE.write_text(json.dumps(output, indent=2), encoding="utf-8")
-    print(f"Wrote {OUTPUT_FILE}")
+    print(f"\nWrote {OUTPUT_FILE}")
+
 
 if __name__ == "__main__":
     main()
+

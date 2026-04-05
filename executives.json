@@ -1,22 +1,213 @@
 {
-  "last_updated": "2026-03-31T05:31:43.268062",
+  "last_updated": "2026-04-05T13:54:07.345859",
   "associations": {
     "Sarnia Brigade": [
       {
         "role": "President",
-        "name": "Past",
+        "name": "Mick Jackson",
         "phone": "",
-        "email": ""
+        "email": "mick.jackson@sarniabrigade.ca"
+      },
+      {
+        "role": "Vice President",
+        "name": "Brandon Palmer",
+        "phone": "",
+        "email": "brandon.palmer@sarniabrigade.ca"
+      },
+      {
+        "role": "Vice President",
+        "name": "Ian Philp",
+        "phone": "",
+        "email": "ian.philp@sarniabrigade.ca"
+      },
+      {
+        "role": "Secretary",
+        "name": "Kari Sulaiman",
+        "phone": "",
+        "email": "kari.sulaiman@sarniabrigade.ca"
       }
     ],
-    "Alvinston Minor Ball": [],
+    "Alvinston Minor Ball": [
+      {
+        "role": "President",
+        "name": "Andy Triest",
+        "phone": "",
+        "email": "tootalltriest@hotmail.com"
+      },
+      {
+        "role": "Vice President",
+        "name": "Steve Aarts",
+        "phone": "",
+        "email": "sjaarts@brktel.on.ca"
+      },
+      {
+        "role": "Secretary",
+        "name": "Deanna Muxlow",
+        "phone": "",
+        "email": "joedee@brktel.on.ca"
+      }
+    ],
+    "Wallaceburg Minor Ball": [
+      {
+        "role": "President",
+        "name": "Doug Buchan",
+        "phone": "",
+        "email": "President.wallaceburgmba@gmail.com"
+      },
+      {
+        "role": "Vice President",
+        "name": "Scott Blair",
+        "phone": "",
+        "email": "vicepresident@wallaceburgminorball.ca"
+      },
+      {
+        "role": "Secretary",
+        "name": "Chelsea Knox",
+        "phone": "",
+        "email": "secretary@wallaceburgminorball.ca"
+      }
+    ],
+    "Corunna Minor Baseball": [
+      {
+        "role": "President",
+        "name": "Paula Mckinlay",
+        "phone": "",
+        "email": "president@corunnaminorbaseball.com"
+      },
+      {
+        "role": "Vice President",
+        "name": "Andy Woodward",
+        "phone": "",
+        "email": "VPFastball@corunnaminorbaseball.com"
+      },
+      {
+        "role": "Vice President",
+        "name": "Chris Vangrimberghe",
+        "phone": "",
+        "email": "VPHardball@corunnaminorbaseball.com"
+      },
+      {
+        "role": "Secretary",
+        "name": "Position Vacant",
+        "phone": "",
+        "email": "secretary@corunnaminorbaseball.com"
+      }
+    ],
+    "Dresden Minor Ball": [
+      {
+        "role": "President",
+        "name": "Justin Wright",
+        "phone": "519-359-7132",
+        "email": "dresdenminorball@gmail.com"
+      },
+      {
+        "role": "Secretary",
+        "name": "Patrick Milne",
+        "phone": "519-365-5794",
+        "email": "dresdenminorball@gmail.com"
+      }
+    ],
+    "Chatham Minor Baseball": [
+      {
+        "role": "President",
+        "name": "Jason Chickowski",
+        "phone": "",
+        "email": "chathamminorbaseballcmba@gmail.com"
+      }
+    ],
+    "Lambton Shores Minor Ball": [
+      {
+        "role": "President",
+        "name": "Adam Willer",
+        "phone": "",
+        "email": "adam@lambtonshoresminorball.ca"
+      },
+      {
+        "role": "Secretary",
+        "name": "Julie Cole",
+        "phone": "",
+        "email": "juliecole1@hotmail.com"
+      }
+    ],
+    "Wyoming Minor Ball": [
+      {
+        "role": "President",
+        "name": "Matt Helps",
+        "phone": "",
+        "email": "hel_pzy17@hotmail.com"
+      },
+      {
+        "role": "Vice President",
+        "name": "Steve Mcgrail",
+        "phone": "",
+        "email": "stevemcgrail@hotmail.com"
+      },
+      {
+        "role": "Secretary",
+        "name": "Mandi Pearson",
+        "phone": "",
+        "email": "wyomingminorballassociation@gmail.com"
+      }
+    ],
     "Blenheim Minor Baseball": [],
     "Camlachie Athletic Association": [
       {
+        "role": "President",
+        "name": "Rob Shortreed",
+        "phone": "519 402 0059",
+        "email": "rshortreed1@cogeco.ca"
+      },
+      {
+        "role": "Vice President",
+        "name": "Liz Townsend",
+        "phone": "226 932 6939",
+        "email": "elizabeth.townsend@lkdsb.net"
+      },
+      {
         "role": "Secretary",
         "name": "Coach",
+        "phone": "519 317 9345",
+        "email": "ryannefarrell@gmail.com"
+      },
+      {
+        "role": "Secretary",
+        "name": "Randi Mcdonald",
+        "phone": "226 932 0315",
+        "email": "secretarycamathletic@gmail.com"
+      }
+    ],
+    "Dutton Royals": [
+      {
+        "role": "President",
+        "name": "Jennifer Drummelsmith",
         "phone": "",
-        "email": ""
+        "email": "president@duttonroyals.com"
+      },
+      {
+        "role": "Vice President",
+        "name": "Rob Tait",
+        "phone": "",
+        "email": "rtait@duttonroyals.com"
+      },
+      {
+        "role": "Secretary",
+        "name": "Maryjo Tait",
+        "phone": "",
+        "email": "secretary@duttonroyals.com"
+      }
+    ],
+    "Port Lambton Pirates": [
+      {
+        "role": "President",
+        "name": "Chris Dobbelaar",
+        "phone": "",
+        "email": "dobbelaar84@icloud.com"
+      },
+      {
+        "role": "Secretary",
+        "name": "Wendy Bowles",
+        "phone": "",
+        "email": "wmurphy25@msn.com"
       }
     ]
   }

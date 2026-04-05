@@ -1,12 +1,12 @@
-name: Daily OBA Coach Scraper
+name: OBA Data Scraper
 
 on:
   schedule:
-    # Run daily at 8 AM Eastern Time
-    # 13:00 UTC = 8:00 AM EST (winter) / 9:00 AM EDT (summer)
-    # Using 12:00 UTC for closer alignment to 8am EDT
+    # Coach data: daily at 8 AM Eastern (12:00 UTC)
     - cron: '0 12 * * *'
-  
+    # Executive data: monthly on the 1st at 8 AM Eastern (12:00 UTC)
+    - cron: '0 12 1 * *'
+
   # Allow manual triggering
   workflow_dispatch:
 
@@ -34,18 +34,23 @@ jobs:
       - name: Install Playwright Chromium
         run: python -m playwright install --with-deps chromium
       
-      - name: Run scraper
+      - name: Run coach scraper
         run: python scraper.py
-      
+
+      - name: Run executive scraper (monthly)
+        if: github.event.schedule == '0 12 1 * *' || github.event_name == 'workflow_dispatch'
+        run: python executive_scraper.py
+
       - name: Commit and push changes
         run: |
           git config --local user.email "robwinship@hotmail.com"
           git config --local user.name "robwinship"
-          
-          if git diff --quiet data.json; then
-            echo "No changes to data.json"
+
+          CHANGED=$(git diff --name-only data.json executives.json)
+          if [ -z "$CHANGED" ]; then
+            echo "No changes to commit"
           else
-            git add data.json
-            git commit -m "chore: update coach data - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            git add data.json executives.json
+            git commit -m "chore: update data - $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
             git push
           fi
