@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-05T13:54:07.345859",
+  "last_updated": "2026-04-05T14:07:41.299967",
   "associations": {
     "Sarnia Brigade": [
       {
@@ -149,7 +149,26 @@
         "email": "wyomingminorballassociation@gmail.com"
       }
     ],
-    "Blenheim Minor Baseball": [],
+    "Blenheim Minor Baseball": [
+      {
+        "role": "President",
+        "name": "Chris Knight",
+        "phone": "",
+        "email": "knightcc@gmail.com"
+      },
+      {
+        "role": "Vice President",
+        "name": "Mark Vandevelde",
+        "phone": "",
+        "email": "vancore@ciaccess.com"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Kelcey Kucharski",
+        "phone": "",
+        "email": "kelcey.kucharski@gmail.com"
+      }
+    ],
     "Camlachie Athletic Association": [
       {
         "role": "President",

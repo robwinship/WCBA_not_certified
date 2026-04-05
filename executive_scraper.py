@@ -179,46 +179,86 @@ def extract_via_vcards(soup) -> list:
 
 def extract_via_text(soup) -> list:
     """
-    Fallback for sites (e.g. Blenheim) that list executives as plain text
-    rather than using the vCard module.
-    Pattern expected: ROLE  Name  email  (tab/multi-space delimited)
+    Fallback for sites (e.g. Blenheim) whose staff list is stored as plain text
+    with no vCard links.
+
+    With get_text(separator=newline, strip=True), each field lands on its own line:
+        PRESIDENT
+        Chris Knight
+        knightcc@gmail.com
+        VICE-PRESIDENT
+        Mark VanDeVelde
+        ...
+    We scan for role-keyword lines then look ahead for name/email.
     """
     results = []
     seen = set()
-    full = soup.get_text("\n", strip=True)
 
-    for line in full.splitlines():
-        line = line.strip()
-        if not line:
+    lines = [ln.strip() for ln in soup.get_text(separator="\n", strip=True).splitlines() if ln.strip()]
+
+    ROLE_LINE_RE = re.compile(
+        r'^((?:1st|2nd|first|second)\s+vice[\s\-]?president'
+        r'|vice[\s\-]?president'
+        r'|president'
+        r'|secretary'
+        r'|tre[sa]urer)$',
+        re.I
+    )
+    EMAIL_LINE_RE = re.compile(r'^[\w\.\+\-]+@[\w\.\-]+\.[a-zA-Z]{2,6}$', re.I)
+    NAME_LINE_RE = re.compile(r'^[A-Za-z][A-Za-z\s\'\-\.]{1,40}$')
+
+    for i, line in enumerate(lines):
+        m = ROLE_LINE_RE.match(line)
+        if not m:
             continue
-        for pattern, display in ROLE_PATTERNS:
-            m = re.match(r"\s*" + pattern, line, re.I)
-            if not m:
-                continue
-            # Exclude past president
-            if re.search(r"\bpast\b", line[:m.start()], re.I):
-                continue
-            # After the role keyword, split remainder by tabs or 3+ spaces
-            remainder = line[m.end():]
-            parts = [p.strip() for p in re.split(r"\t+|\s{3,}", remainder) if p.strip()]
-            if not parts:
-                continue
-            name = parts[0]
-            email = next((p for p in parts[1:] if "@" in p), "")
-            if len(name) < 3:
-                continue
-            key = (display.lower(), name.lower())
-            if key in seen:
-                continue
-            seen.add(key)
-            results.append({
-                "role": display,
-                "name": name.title(),
-                "phone": "",
-                "email": email,
-            })
-            break
 
+        # Exclude "Past President"
+        if i > 0 and "past" in lines[i - 1].lower():
+            continue
+
+        raw_role = m.group(1)
+        name = ""
+        email = ""
+
+        # Look ahead up to 6 lines for name and email
+        for j in range(i + 1, min(i + 7, len(lines))):
+            candidate = lines[j].strip()
+            # Stop if we hit the next role entry
+            if ROLE_LINE_RE.match(candidate):
+                break
+            if not name and NAME_LINE_RE.match(candidate) and "@" not in candidate:
+                name = candidate
+            elif not email and EMAIL_LINE_RE.match(candidate):
+                email = candidate
+
+        if not name:
+            continue
+
+        # Map to canonical display role
+        display = None
+        for pattern, label in ROLE_PATTERNS:
+            if re.fullmatch(pattern, raw_role, re.I):
+                display = label
+                break
+        if not display:
+            continue
+
+        key = (display.lower(), name.lower())
+        if key in seen:
+            continue
+        seen.add(key)
+
+        results.append({
+            "role": display,
+            "name": name.title(),
+            "phone": "",
+            "email": email,
+        })
+
+    results.sort(key=lambda r: (
+        ROLE_ORDER.index(r["role"]) if r["role"] in ROLE_ORDER else 99,
+        r["name"]
+    ))
     return results
 
 
