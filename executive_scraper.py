@@ -36,7 +36,7 @@ ROLE_PATTERNS = [
     (r"vice[\s\-]?president",                  "Vice President"),
     (r"president",                              "President"),
     (r"secretary",                              "Secretary"),
-    (r"tre[sa]urer",                            "Treasurer"),
+    (r"trea?surer",                             "Treasurer"),
 ]
 ROLE_ORDER = ["President", "Vice President", "Secretary", "Treasurer"]
 
@@ -201,7 +201,7 @@ def extract_via_text(soup) -> list:
         r'|vice[\s\-]?president'
         r'|president'
         r'|secretary'
-        r'|tre[sa]urer)$',
+        r'|trea?surer)$',
         re.I
     )
     EMAIL_LINE_RE = re.compile(r'^[\w\.\+\-]+@[\w\.\-]+\.[a-zA-Z]{2,6}$', re.I)

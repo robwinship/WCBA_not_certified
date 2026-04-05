@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-05T14:07:41.299967",
+  "last_updated": "2026-04-05T14:27:15.863899",
   "associations": {
     "Sarnia Brigade": [
       {
@@ -25,6 +25,12 @@
         "name": "Kari Sulaiman",
         "phone": "",
         "email": "kari.sulaiman@sarniabrigade.ca"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Brittany Burling",
+        "phone": "",
+        "email": "treasurer@sarniabrigade.ca"
       }
     ],
     "Alvinston Minor Ball": [
@@ -45,6 +51,12 @@
         "name": "Deanna Muxlow",
         "phone": "",
         "email": "joedee@brktel.on.ca"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Cassie Lightfoot",
+        "phone": "",
+        "email": "cassiefuko@hotmail.ca"
       }
     ],
     "Wallaceburg Minor Ball": [
@@ -65,6 +77,12 @@
         "name": "Chelsea Knox",
         "phone": "",
         "email": "secretary@wallaceburgminorball.ca"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Terry Knox",
+        "phone": "",
+        "email": "treasurer@wallaceburgminorball.ca"
       }
     ],
     "Corunna Minor Baseball": [
@@ -91,6 +109,12 @@
         "name": "Position Vacant",
         "phone": "",
         "email": "secretary@corunnaminorbaseball.com"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Tracy Woodward",
+        "phone": "",
+        "email": "treasurer@corunnaminorbaseball.com"
       }
     ],
     "Dresden Minor Ball": [
@@ -104,6 +128,12 @@
         "role": "Secretary",
         "name": "Patrick Milne",
         "phone": "519-365-5794",
+        "email": "dresdenminorball@gmail.com"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Ryan Mcfadden",
+        "phone": "519-809-5055",
         "email": "dresdenminorball@gmail.com"
       }
     ],
@@ -127,6 +157,12 @@
         "name": "Julie Cole",
         "phone": "",
         "email": "juliecole1@hotmail.com"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Jessica Adams",
+        "phone": "",
+        "email": "lsfalconstreasurer@gmail.com"
       }
     ],
     "Wyoming Minor Ball": [
@@ -147,6 +183,12 @@
         "name": "Mandi Pearson",
         "phone": "",
         "email": "wyomingminorballassociation@gmail.com"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Laura Smits",
+        "phone": "",
+        "email": "smitslaura5@gmail.com"
       }
     ],
     "Blenheim Minor Baseball": [
@@ -193,6 +235,12 @@
         "name": "Randi Mcdonald",
         "phone": "226 932 0315",
         "email": "secretarycamathletic@gmail.com"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Mike Lyons",
+        "phone": "519 869 4751",
+        "email": "treasurercamathletic@gmail.com"
       }
     ],
     "Dutton Royals": [
@@ -213,6 +261,12 @@
         "name": "Maryjo Tait",
         "phone": "",
         "email": "secretary@duttonroyals.com"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Amanda Hull",
+        "phone": "",
+        "email": "treasurer@duttonroyals.com"
       }
     ],
     "Port Lambton Pirates": [
@@ -227,6 +281,12 @@
         "name": "Wendy Bowles",
         "phone": "",
         "email": "wmurphy25@msn.com"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Karri Bouman",
+        "phone": "",
+        "email": "karribouman@gmail.com"
       }
     ]
   }
