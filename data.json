@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-04-14T12:36:09.081675",
+  "last_updated": "2026-04-15T12:36:45.381074",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 121,
+  "total_coaches": 114,
   "locals": {
     "Alvinston": {
       "count": 3,
@@ -63,17 +63,17 @@
         },
         {
           "name": "Kirk Vollans",
+          "position": "9U D Assistant Coach",
+          "reg_id": "6833219"
+        },
+        {
+          "name": "Kirk Vollans",
           "position": "11U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
           "name": "Kirk Vollans",
           "position": "13U D Assistant Coach",
-          "reg_id": "6833219"
-        },
-        {
-          "name": "Kirk Vollans",
-          "position": "9U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -163,7 +163,7 @@
         },
         {
           "name": "Mark Vandergriendt",
-          "position": "15U A Assistant Coach",
+          "position": "15U B Assistant Coach",
           "reg_id": "6165461"
         },
         {
@@ -248,12 +248,12 @@
         },
         {
           "name": "Jeremy Dell",
-          "position": "9U D Assistant Coach",
+          "position": "13U D Assistant Coach",
           "reg_id": "6833202"
         },
         {
           "name": "Jeremy Dell",
-          "position": "13U D Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "6833202"
         }
       ]
@@ -337,18 +337,18 @@
         },
         {
           "name": "Mike Lane",
-          "position": "22U B Assistant Coach",
+          "position": "18U A Assistant Coach",
           "reg_id": "5823550"
         },
         {
           "name": "Mike Lane",
-          "position": "18U A Assistant Coach",
+          "position": "22U B Assistant Coach",
           "reg_id": "5823550"
         }
       ]
     },
     "Sarnia": {
-      "count": 41,
+      "count": 37,
       "coaches": [
         {
           "name": "Aaron Cassetta",
@@ -359,11 +359,6 @@
           "name": "Adam Crowe",
           "position": "11U DS Assistant Coach",
           "reg_id": "7115890"
-        },
-        {
-          "name": "Al Hillis",
-          "position": "16U AAA Assistant Coach",
-          "reg_id": "5680913"
         },
         {
           "name": "Andrew Smith",
@@ -384,11 +379,6 @@
           "name": "Brent Steeves",
           "position": "10U A Assistant Coach",
           "reg_id": "1226551"
-        },
-        {
-          "name": "Brett Gray",
-          "position": "10U AA Assistant Coach",
-          "reg_id": "1221803"
         },
         {
           "name": "Brian Walker",
@@ -434,11 +424,6 @@
           "name": "Cory Sommise",
           "position": "13U DS Assistant Coach",
           "reg_id": "6851243"
-        },
-        {
-          "name": "Craig Helps",
-          "position": "10U AA Assistant Coach",
-          "reg_id": "1225857"
         },
         {
           "name": "Dan Sparks",
@@ -508,7 +493,7 @@
         {
           "name": "Noah Best",
           "position": "11U DS Assistant Coach",
-          "reg_id": "6996171"
+          "reg_id": "6657552"
         },
         {
           "name": "Owen Utley",
@@ -529,11 +514,6 @@
           "name": "Steve Edwardson",
           "position": "10U AA Assistant Coach",
           "reg_id": "6670299"
-        },
-        {
-          "name": "Steve Helps",
-          "position": "14U AA Head Coach",
-          "reg_id": "6235933"
         },
         {
           "name": "Steve Mcewen",
@@ -582,28 +562,23 @@
         },
         {
           "name": "Kristan Blair",
-          "position": "9U D Assistant Coach",
+          "position": "11U D Assistant Coach",
           "reg_id": "960266"
         },
         {
           "name": "Kristan Blair",
-          "position": "11U D Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "960266"
         }
       ]
     },
     "Wyoming": {
-      "count": 13,
+      "count": 10,
       "coaches": [
         {
           "name": "Adam Campbell",
           "position": "9U D Assistant Coach",
           "reg_id": "7110738"
-        },
-        {
-          "name": "Adam Swan",
-          "position": "11U DS Assistant Coach",
-          "reg_id": "5737146"
         },
         {
           "name": "Eric Hyatt",
@@ -612,7 +587,7 @@
         },
         {
           "name": "Jace Mccahill",
-          "position": "15U B Head Coach",
+          "position": "15U D Head Coach",
           "reg_id": "5815363"
         },
         {
@@ -644,16 +619,6 @@
           "name": "Stephen Szmiett",
           "position": "9U D Assistant Coach",
           "reg_id": "6754464"
-        },
-        {
-          "name": "Steve Helps",
-          "position": "11U D Assistant Coach",
-          "reg_id": "6235933"
-        },
-        {
-          "name": "Steve Helps",
-          "position": "SENIOR AA Assistant Coach",
-          "reg_id": "6235933"
         },
         {
           "name": "Troy Gibbings",
