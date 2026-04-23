@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T12:36:09.443836",
+  "last_updated": "2026-04-23T12:36:32.026549",
   "updates_at": "8:00 AM Eastern",
   "total_coaches": 105,
   "locals": {
@@ -63,7 +63,7 @@
         },
         {
           "name": "Kirk Vollans",
-          "position": "9U D Assistant Coach",
+          "position": "13U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -73,7 +73,7 @@
         },
         {
           "name": "Kirk Vollans",
-          "position": "13U D Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -292,12 +292,12 @@
       "coaches": [
         {
           "name": "Al Hillis",
-          "position": "18U C Assistant Coach",
+          "position": "18U A Assistant Coach",
           "reg_id": "5680913"
         },
         {
           "name": "Al Hillis",
-          "position": "18U A Assistant Coach",
+          "position": "18U C Assistant Coach",
           "reg_id": "5680913"
         },
         {
@@ -317,17 +317,17 @@
         },
         {
           "name": "Mike Lane",
+          "position": "22U B Head Coach",
+          "reg_id": "5823550"
+        },
+        {
+          "name": "Mike Lane",
           "position": "18U C Assistant Coach",
           "reg_id": "5823550"
         },
         {
           "name": "Mike Lane",
           "position": "18U A Assistant Coach",
-          "reg_id": "5823550"
-        },
-        {
-          "name": "Mike Lane",
-          "position": "22U B Head Coach",
           "reg_id": "5823550"
         }
       ]
@@ -342,12 +342,12 @@
         },
         {
           "name": "Andrew Smith",
-          "position": "13U HS Assistant Coach",
+          "position": "10U AA Assistant Coach",
           "reg_id": "6797054"
         },
         {
           "name": "Andrew Smith",
-          "position": "10U AA Assistant Coach",
+          "position": "13U HS Assistant Coach",
           "reg_id": "6797054"
         },
         {
