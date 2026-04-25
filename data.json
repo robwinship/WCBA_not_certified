@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-04-24T12:36:05.913690",
+  "last_updated": "2026-04-25T12:26:47.201954",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 105,
+  "total_coaches": 106,
   "locals": {
     "Alvinston": {
       "count": 3,
@@ -24,8 +24,13 @@
       ]
     },
     "Blenheim": {
-      "count": 15,
+      "count": 16,
       "coaches": [
+        {
+          "name": "Chris Knight",
+          "position": "13U D Assistant Coach",
+          "reg_id": "6469033"
+        },
         {
           "name": "Chris Knight",
           "position": "11U D Assistant Coach",
