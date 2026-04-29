@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-04-28T12:51:31.413913",
+  "last_updated": "2026-04-29T12:48:55.483037",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 106,
+  "total_coaches": 105,
   "locals": {
     "Alvinston": {
       "count": 3,
       "coaches": [
         {
           "name": "Adam Willemse",
-          "position": "18U C Assistant Coach",
+          "position": "18U C Head Coach",
           "reg_id": "6339870"
         },
         {
-          "name": "Graham Goss",
-          "position": "13U DS Assistant Coach",
-          "reg_id": "6696338"
+          "name": "Brock Shea",
+          "position": "13U DS Head Coach",
+          "reg_id": "6679516"
         },
         {
           "name": "Paul Aarts",
-          "position": "18U C Head Coach",
+          "position": "18U C Assistant Coach",
           "reg_id": "5900579"
         }
       ]
@@ -68,7 +68,7 @@
         },
         {
           "name": "Kirk Vollans",
-          "position": "13U D Assistant Coach",
+          "position": "9U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -78,7 +78,7 @@
         },
         {
           "name": "Kirk Vollans",
-          "position": "9U D Assistant Coach",
+          "position": "13U D Assistant Coach",
           "reg_id": "6833219"
         },
         {
@@ -109,7 +109,7 @@
       ]
     },
     "Chatham": {
-      "count": 12,
+      "count": 11,
       "coaches": [
         {
           "name": "Andy Stead",
@@ -147,11 +147,6 @@
           "reg_id": "1224962"
         },
         {
-          "name": "Dave Vanmiddelkoop",
-          "position": "9U B Assistant Coach",
-          "reg_id": "6942005"
-        },
-        {
           "name": "Ed Huynh",
           "position": "10U B Assistant Coach",
           "reg_id": "6784175"
@@ -174,12 +169,12 @@
       ]
     },
     "Corunna": {
-      "count": 8,
+      "count": 10,
       "coaches": [
         {
-          "name": "Adam Blois",
-          "position": "9U D Head Coach",
-          "reg_id": "7072140"
+          "name": "Ashley Monteiro",
+          "position": "11U HS Assistant Coach",
+          "reg_id": "7137676"
         },
         {
           "name": "Chris Bartosz",
@@ -197,6 +192,11 @@
           "reg_id": "6822069"
         },
         {
+          "name": "Kirk Mcclintock",
+          "position": "13U HS Assistant Coach",
+          "reg_id": "1244076"
+        },
+        {
           "name": "Mark Gibson",
           "position": "11U D Head Coach",
           "reg_id": "6690074"
@@ -205,6 +205,11 @@
           "name": "Mark Mckillican",
           "position": "11U D Assistant Coach",
           "reg_id": "6844953"
+        },
+        {
+          "name": "Matt Hall",
+          "position": "16U B Assistant Coach",
+          "reg_id": "5886048"
         },
         {
           "name": "Matt Nisbet",
@@ -219,12 +224,17 @@
       ]
     },
     "Dresden": {
-      "count": 4,
+      "count": 6,
       "coaches": [
         {
           "name": "Chad Van Dellen",
           "position": "11U D Assistant Coach",
           "reg_id": "6398148"
+        },
+        {
+          "name": "Dave Cameron",
+          "position": "SENIOR C Head Coach",
+          "reg_id": "1113292"
         },
         {
           "name": "Greg Wolting",
@@ -240,12 +250,28 @@
           "name": "Jeremy Dell",
           "position": "11U D Assistant Coach",
           "reg_id": "6833202"
+        },
+        {
+          "name": "Kurt Holmes",
+          "position": "SENIOR C Assistant Coach",
+          "reg_id": "6123003"
         }
       ]
     },
     "Dutton": {
-      "count": 0,
-      "coaches": []
+      "count": 2,
+      "coaches": [
+        {
+          "name": "Dave Galloway",
+          "position": "18U DS Head Coach",
+          "reg_id": "6488404"
+        },
+        {
+          "name": "Greg Hull",
+          "position": "11U DS Head Coach",
+          "reg_id": "6605619"
+        }
+      ]
     },
     "Lambton Shores": {
       "count": 8,
@@ -293,21 +319,26 @@
       ]
     },
     "Port Lambton": {
-      "count": 8,
+      "count": 11,
       "coaches": [
         {
-          "name": "Al Hillis",
-          "position": "18U A Assistant Coach",
-          "reg_id": "5680913"
-        },
-        {
-          "name": "Al Hillis",
+          "name": "Allan Hillis",
           "position": "18U C Assistant Coach",
           "reg_id": "5680913"
         },
         {
+          "name": "Allan Hillis",
+          "position": "18U A Assistant Coach",
+          "reg_id": "5680913"
+        },
+        {
+          "name": "Brian Reid",
+          "position": "15U D Head Coach",
+          "reg_id": "6411885"
+        },
+        {
           "name": "Brian Riedel",
-          "position": "SENIOR C Assistant Coach",
+          "position": "SENIOR B Assistant Coach",
           "reg_id": "5855121"
         },
         {
@@ -321,8 +352,13 @@
           "reg_id": "5825889"
         },
         {
+          "name": "Jeremy Vanryumbeke",
+          "position": "18U C Assistant Coach",
+          "reg_id": "5901462"
+        },
+        {
           "name": "Mike Lane",
-          "position": "22U B Head Coach",
+          "position": "18U A Assistant Coach",
           "reg_id": "5823550"
         },
         {
@@ -332,28 +368,23 @@
         },
         {
           "name": "Mike Lane",
-          "position": "18U A Assistant Coach",
+          "position": "22U B Head Coach",
+          "reg_id": "5823550"
+        },
+        {
+          "name": "Nash Lane",
+          "position": "18U C Assistant Coach",
           "reg_id": "5823550"
         }
       ]
     },
     "Sarnia": {
-      "count": 32,
+      "count": 23,
       "coaches": [
         {
           "name": "Adam Crowe",
           "position": "11U DS Assistant Coach",
           "reg_id": "7115890"
-        },
-        {
-          "name": "Andrew Smith",
-          "position": "10U AA Assistant Coach",
-          "reg_id": "6797054"
-        },
-        {
-          "name": "Andrew Smith",
-          "position": "13U HS Assistant Coach",
-          "reg_id": "6797054"
         },
         {
           "name": "Bill Best",
@@ -371,34 +402,14 @@
           "reg_id": "7115649"
         },
         {
-          "name": "Brooke Campbell",
-          "position": "8U AA Assistant Coach",
-          "reg_id": "7018097"
-        },
-        {
           "name": "Bruce Gray",
           "position": "22U AAA Assistant Coach",
           "reg_id": "616329"
         },
         {
-          "name": "Bryan Deschutter",
-          "position": "8U AA Assistant Coach",
-          "reg_id": "7073516"
-        },
-        {
-          "name": "Carl Best",
-          "position": "11U DS Head Coach",
-          "reg_id": "6959617"
-        },
-        {
           "name": "Chris Foster",
           "position": "13U HS Assistant Coach",
           "reg_id": "6511342"
-        },
-        {
-          "name": "Cody Webster",
-          "position": "15U DS Assistant Coach",
-          "reg_id": "6099001"
         },
         {
           "name": "Cory Sommise",
@@ -431,11 +442,6 @@
           "reg_id": "7076015"
         },
         {
-          "name": "Greg Moore",
-          "position": "12U AA Assistant Coach",
-          "reg_id": "6369363"
-        },
-        {
           "name": "Jason Polera",
           "position": "16U AAA Assistant Coach",
           "reg_id": "5868639"
@@ -444,11 +450,6 @@
           "name": "Jesse Theriault",
           "position": "9U DS Assistant Coach",
           "reg_id": "7119228"
-        },
-        {
-          "name": "John Bettridge",
-          "position": "9U AA Assistant Coach",
-          "reg_id": "6702741"
         },
         {
           "name": "Mick Jackson",
@@ -476,11 +477,6 @@
           "reg_id": "6342953"
         },
         {
-          "name": "Shane Murphy",
-          "position": "11U AA Assistant Coach",
-          "reg_id": "6789905"
-        },
-        {
           "name": "Steve Mcewen",
           "position": "13U DS Assistant Coach",
           "reg_id": "5992217"
@@ -496,9 +492,9 @@
           "reg_id": "1191089"
         },
         {
-          "name": "Wade Babula",
-          "position": "10U AA Assistant Coach",
-          "reg_id": "5678639"
+          "name": "Will Greer",
+          "position": "16U AAA Assistant Coach",
+          "reg_id": "7011383"
         }
       ]
     },
