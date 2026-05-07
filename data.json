@@ -1,11 +1,16 @@
 {
-  "last_updated": "2026-05-06T12:53:07.048783",
+  "last_updated": "2026-05-07T12:53:49.356185",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 84,
+  "total_coaches": 91,
   "locals": {
     "Alvinston": {
-      "count": 2,
+      "count": 3,
       "coaches": [
+        {
+          "name": "Adam Willemse",
+          "position": "18U C Head Coach",
+          "reg_id": "6339870"
+        },
         {
           "name": "Brock Shea",
           "position": "13U DS Head Coach",
@@ -19,7 +24,7 @@
       ]
     },
     "Blenheim": {
-      "count": 13,
+      "count": 14,
       "coaches": [
         {
           "name": "Brandon Broadwood",
@@ -70,6 +75,11 @@
           "name": "Kyle Langstaff",
           "position": "9U D Assistant Coach",
           "reg_id": "6767122"
+        },
+        {
+          "name": "Matt Hall",
+          "position": "13U D Head Coach",
+          "reg_id": "5886048"
         },
         {
           "name": "Mitch Wammes",
@@ -159,7 +169,7 @@
       ]
     },
     "Corunna": {
-      "count": 9,
+      "count": 10,
       "coaches": [
         {
           "name": "Ashley Monteiro",
@@ -195,6 +205,11 @@
           "name": "Mark Mckillican",
           "position": "11U D Assistant Coach",
           "reg_id": "6844953"
+        },
+        {
+          "name": "Matt Hall",
+          "position": "16U B Assistant Coach",
+          "reg_id": "5886048"
         },
         {
           "name": "Matt Nisbet",
@@ -349,12 +364,17 @@
       ]
     },
     "Sarnia": {
-      "count": 10,
+      "count": 14,
       "coaches": [
         {
           "name": "Adam Crowe",
           "position": "11U DS Assistant Coach",
           "reg_id": "7115890"
+        },
+        {
+          "name": "Bruce Gray",
+          "position": "22U AAA Assistant Coach",
+          "reg_id": "616329"
         },
         {
           "name": "Chris Foster",
@@ -365,6 +385,11 @@
           "name": "Cory Sommise",
           "position": "13U DS Assistant Coach",
           "reg_id": "6851243"
+        },
+        {
+          "name": "Dan Sparks",
+          "position": "16U AAA Assistant Coach",
+          "reg_id": "6169286"
         },
         {
           "name": "Jason Polera",
@@ -387,9 +412,19 @@
           "reg_id": "6934379"
         },
         {
+          "name": "Ryan Nutma",
+          "position": "16U AAA Assistant Coach",
+          "reg_id": "6342953"
+        },
+        {
           "name": "Steve Mcewen",
           "position": "13U DS Assistant Coach",
           "reg_id": "5992217"
+        },
+        {
+          "name": "Taylor Castrillo",
+          "position": "9U DS Head Coach",
+          "reg_id": "6318706"
         },
         {
           "name": "Tim Symington",
