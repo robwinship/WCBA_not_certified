@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T13:22:04.494543",
+  "last_updated": "2026-06-01T14:10:17.939875",
   "associations": {
     "Sarnia Brigade": [
       {
@@ -226,15 +226,15 @@
       },
       {
         "role": "Secretary",
-        "name": "Coach",
-        "phone": "519 317 9345",
-        "email": "ryannefarrell@gmail.com"
-      },
-      {
-        "role": "Secretary",
         "name": "Randi Mcdonald",
         "phone": "226 932 0315",
         "email": "secretarycamathletic@gmail.com"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Julie Scott",
+        "phone": "519 331 6204",
+        "email": "julierustyscott3@gmail.com"
       },
       {
         "role": "Treasurer",
