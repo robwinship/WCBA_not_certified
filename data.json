@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-06-03T13:58:38.417470",
+  "last_updated": "2026-06-04T13:25:09.265593",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 84,
+  "total_coaches": 85,
   "locals": {
     "Alvinston": {
       "count": 2,
@@ -19,7 +19,7 @@
       ]
     },
     "Blenheim": {
-      "count": 14,
+      "count": 15,
       "coaches": [
         {
           "name": "Brandon Broadwood",
@@ -75,6 +75,11 @@
           "name": "Matt Hall",
           "position": "13U D Head Coach",
           "reg_id": "5886048"
+        },
+        {
+          "name": "Mike Dozois",
+          "position": "13U D Assistant Coach",
+          "reg_id": "1054502"
         },
         {
           "name": "Mitch Wammes",
@@ -192,9 +197,9 @@
           "reg_id": "6719587"
         },
         {
-          "name": "Mike Barons",
-          "position": "13U HS Assistant Coach",
-          "reg_id": "6984815"
+          "name": "Mike Tyndall",
+          "position": "SENIOR B Assistant Coach",
+          "reg_id": "1228234"
         }
       ]
     },
@@ -269,12 +274,17 @@
       ]
     },
     "Lambton Shores": {
-      "count": 4,
+      "count": 5,
       "coaches": [
         {
           "name": "Andrew Adams",
           "position": "11U DS Head Coach",
           "reg_id": "6825072"
+        },
+        {
+          "name": "Colin Vankessel",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "6538803"
         },
         {
           "name": "Paul Van Lieshout",
@@ -329,7 +339,7 @@
       ]
     },
     "Sarnia": {
-      "count": 10,
+      "count": 9,
       "coaches": [
         {
           "name": "Bruce Gray",
@@ -345,11 +355,6 @@
           "name": "Cory Sommise",
           "position": "13U DS Assistant Coach",
           "reg_id": "6851243"
-        },
-        {
-          "name": "Dan Sparks",
-          "position": "16U AAA Assistant Coach",
-          "reg_id": "6169286"
         },
         {
           "name": "Jesse Theriault",
