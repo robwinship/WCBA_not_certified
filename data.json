@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T13:15:34.070924",
+  "last_updated": "2026-06-10T13:28:32.381583",
   "updates_at": "8:00 AM Eastern",
   "total_coaches": 85,
   "locals": {
@@ -38,12 +38,12 @@
         },
         {
           "name": "Chris Knight",
-          "position": "15U D Head Coach",
+          "position": "13U D Assistant Coach",
           "reg_id": "1062848"
         },
         {
           "name": "Chris Knight",
-          "position": "13U D Assistant Coach",
+          "position": "15U D Head Coach",
           "reg_id": "1062848"
         },
         {
@@ -159,12 +159,22 @@
       ]
     },
     "Corunna": {
-      "count": 8,
+      "count": 10,
       "coaches": [
+        {
+          "name": "Adam Teschke",
+          "position": "9U D Assistant Coach",
+          "reg_id": "5703009"
+        },
         {
           "name": "Chuck Randall",
           "position": "15U D Assistant Coach",
           "reg_id": "6569961"
+        },
+        {
+          "name": "Jason Piper",
+          "position": "9U D Assistant Coach",
+          "reg_id": "6667621"
         },
         {
           "name": "Jeremy Fisher",
@@ -204,7 +214,7 @@
       ]
     },
     "Dresden": {
-      "count": 5,
+      "count": 4,
       "coaches": [
         {
           "name": "Dave Cameron",
@@ -225,11 +235,6 @@
           "name": "Kurt Holmes",
           "position": "SENIOR C Assistant Coach",
           "reg_id": "6123003"
-        },
-        {
-          "name": "Mark Huston",
-          "position": "13U D Assistant Coach",
-          "reg_id": "979941"
         }
       ]
     },
@@ -288,12 +293,12 @@
         },
         {
           "name": "Paul Van Lieshout",
-          "position": "11U DS Assistant Coach",
+          "position": "9U DS Head Coach",
           "reg_id": "5920160"
         },
         {
           "name": "Paul Van Lieshout",
-          "position": "9U DS Head Coach",
+          "position": "11U DS Assistant Coach",
           "reg_id": "5920160"
         },
         {
@@ -339,17 +344,12 @@
       ]
     },
     "Sarnia": {
-      "count": 9,
+      "count": 7,
       "coaches": [
         {
           "name": "Bruce Gray",
           "position": "22U AAA Assistant Coach",
           "reg_id": "616329"
-        },
-        {
-          "name": "Chris Foster",
-          "position": "13U HS Assistant Coach",
-          "reg_id": "6511342"
         },
         {
           "name": "Cory Sommise",
@@ -380,11 +380,6 @@
           "name": "Tim Symington",
           "position": "15U AA Assistant Coach",
           "reg_id": "1191089"
-        },
-        {
-          "name": "Will Greer",
-          "position": "16U AAA Assistant Coach",
-          "reg_id": "7011383"
         }
       ]
     },
@@ -439,7 +434,7 @@
       ]
     },
     "Wyoming": {
-      "count": 8,
+      "count": 9,
       "coaches": [
         {
           "name": "Adam Campbell",
@@ -470,6 +465,11 @@
           "name": "Kevin Smits",
           "position": "11U D Assistant Coach",
           "reg_id": "5703067"
+        },
+        {
+          "name": "Nick Deboer",
+          "position": "11U DS Assistant Coach",
+          "reg_id": "7107891"
         },
         {
           "name": "Nick Mccallum",
