@@ -1,15 +1,20 @@
 {
-  "last_updated": "2026-06-24T13:00:22.991118",
+  "last_updated": "2026-06-25T13:01:08.115799",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 63,
+  "total_coaches": 57,
   "locals": {
     "Alvinston": {
-      "count": 2,
+      "count": 3,
       "coaches": [
         {
           "name": "Brock Shea",
           "position": "13U DS Head Coach",
           "reg_id": "6679516"
+        },
+        {
+          "name": "Connor Reitknecht",
+          "position": "11U DS Head Coach",
+          "reg_id": "7143071"
         },
         {
           "name": "Paul Aarts",
@@ -19,7 +24,7 @@
       ]
     },
     "Blenheim": {
-      "count": 12,
+      "count": 11,
       "coaches": [
         {
           "name": "Brandon Broadwood",
@@ -55,11 +60,6 @@
           "name": "Kirk Vollans",
           "position": "9U D Head Coach",
           "reg_id": "6833219"
-        },
-        {
-          "name": "Kyle Langstaff",
-          "position": "9U D Assistant Coach",
-          "reg_id": "6767122"
         },
         {
           "name": "Mike Dozois",
@@ -134,22 +134,12 @@
       ]
     },
     "Corunna": {
-      "count": 9,
+      "count": 6,
       "coaches": [
         {
           "name": "Adam Teschke",
           "position": "9U D Assistant Coach",
           "reg_id": "5703009"
-        },
-        {
-          "name": "Bob Demers",
-          "position": "9U HS Assistant Coach",
-          "reg_id": "7140154"
-        },
-        {
-          "name": "Brett Matthews",
-          "position": "9U HS Assistant Coach",
-          "reg_id": "7140221"
         },
         {
           "name": "Chuck Randall",
@@ -170,11 +160,6 @@
           "name": "Jeremy Fisher",
           "position": "11U D Assistant Coach",
           "reg_id": "6822069"
-        },
-        {
-          "name": "Mark Mckillican",
-          "position": "11U D Assistant Coach",
-          "reg_id": "6844953"
         },
         {
           "name": "Mike Tyndall",
@@ -224,7 +209,7 @@
       ]
     },
     "Lambton Shores": {
-      "count": 5,
+      "count": 7,
       "coaches": [
         {
           "name": "Andrew Adams",
@@ -237,14 +222,24 @@
           "reg_id": "6538803"
         },
         {
-          "name": "Paul Van Lieshout",
-          "position": "11U DS Assistant Coach",
-          "reg_id": "5920160"
+          "name": "Jeff Rutledge",
+          "position": "9U DS Assistant Coach",
+          "reg_id": "6772899"
+        },
+        {
+          "name": "Matt Mason",
+          "position": "9U DS Assistant Coach",
+          "reg_id": "6992945"
         },
         {
           "name": "Phil Kerrigan",
           "position": "11U DS Assistant Coach",
           "reg_id": "6613905"
+        },
+        {
+          "name": "Ryan Steven",
+          "position": "9U DS Assistant Coach",
+          "reg_id": "1111871"
         },
         {
           "name": "Shane Vandenboer",
@@ -254,7 +249,7 @@
       ]
     },
     "Port Lambton": {
-      "count": 5,
+      "count": 4,
       "coaches": [
         {
           "name": "Allan Hillis",
@@ -275,16 +270,11 @@
           "name": "Jamie Donahue",
           "position": "15U D Assistant Coach",
           "reg_id": "1106206"
-        },
-        {
-          "name": "Jeremy Vanryumbeke",
-          "position": "18U B Assistant Coach",
-          "reg_id": "5901462"
         }
       ]
     },
     "Sarnia": {
-      "count": 5,
+      "count": 4,
       "coaches": [
         {
           "name": "Bruce Gray",
@@ -305,22 +295,12 @@
           "name": "Ryan Nutma",
           "position": "16U AAA Assistant Coach",
           "reg_id": "6342953"
-        },
-        {
-          "name": "Tim Symington",
-          "position": "15U AA Assistant Coach",
-          "reg_id": "1191089"
         }
       ]
     },
     "Wallaceburg": {
-      "count": 5,
+      "count": 4,
       "coaches": [
-        {
-          "name": "Brent Wilbur",
-          "position": "13U D Assistant Coach",
-          "reg_id": "5881764"
-        },
         {
           "name": "Kevin Johnston",
           "position": "13U D Assistant Coach",
@@ -328,12 +308,12 @@
         },
         {
           "name": "Kristen Blair",
-          "position": "13U D Assistant Coach",
+          "position": "11U D Assistant Coach",
           "reg_id": "960266"
         },
         {
           "name": "Kristen Blair",
-          "position": "11U D Assistant Coach",
+          "position": "13U D Assistant Coach",
           "reg_id": "960266"
         },
         {
@@ -344,7 +324,7 @@
       ]
     },
     "Wyoming": {
-      "count": 5,
+      "count": 3,
       "coaches": [
         {
           "name": "Brad Hull",
@@ -352,19 +332,9 @@
           "reg_id": "6300511"
         },
         {
-          "name": "Kevin Helps",
-          "position": "SENIOR AA Assistant Coach",
-          "reg_id": "1034628"
-        },
-        {
           "name": "Kevin Smits",
           "position": "11U D Assistant Coach",
           "reg_id": "5703067"
-        },
-        {
-          "name": "Nick Deboer",
-          "position": "11U DS Assistant Coach",
-          "reg_id": "7107891"
         },
         {
           "name": "Stephen Szmiett",
