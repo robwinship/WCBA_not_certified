@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-02T12:50:35.295751",
+  "last_updated": "2026-07-03T12:49:53.119296",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 39,
+  "total_coaches": 35,
   "locals": {
     "Alvinston": {
       "count": 2,
@@ -19,26 +19,16 @@
       ]
     },
     "Blenheim": {
-      "count": 8,
+      "count": 6,
       "coaches": [
         {
-          "name": "Brandon Broadwood",
-          "position": "9U D Assistant Coach",
-          "reg_id": "7141400"
-        },
-        {
           "name": "Chris Hill",
-          "position": "11U D Assistant Coach",
+          "position": "11U C Assistant Coach",
           "reg_id": "1187725"
         },
         {
-          "name": "Chris Ptaszynski",
-          "position": "11U D Assistant Coach",
-          "reg_id": "6991392"
-        },
-        {
           "name": "Dave Carey",
-          "position": "11U D Assistant Coach",
+          "position": "11U C Assistant Coach",
           "reg_id": "6833325"
         },
         {
@@ -48,7 +38,7 @@
         },
         {
           "name": "Matt Knights",
-          "position": "11U D Assistant Coach",
+          "position": "11U C Assistant Coach",
           "reg_id": "5612943"
         },
         {
@@ -58,23 +48,18 @@
         },
         {
           "name": "Pat Savage",
-          "position": "15U D Assistant Coach",
+          "position": "15U C Assistant Coach",
           "reg_id": "5872722"
         }
       ]
     },
     "Chatham": {
-      "count": 3,
+      "count": 2,
       "coaches": [
         {
           "name": "Chad Recker",
           "position": "22U B Assistant Coach",
           "reg_id": "6120702"
-        },
-        {
-          "name": "Jeff Drexler",
-          "position": "8U B Head Coach",
-          "reg_id": "6169334"
         },
         {
           "name": "Shawn Delanghe",
@@ -199,7 +184,7 @@
       ]
     },
     "Sarnia": {
-      "count": 3,
+      "count": 2,
       "coaches": [
         {
           "name": "Ben Murray",
@@ -210,11 +195,6 @@
           "name": "Bruce Gray",
           "position": "22U AAA Assistant Coach",
           "reg_id": "616329"
-        },
-        {
-          "name": "Mike Perry",
-          "position": "9U DS Assistant Coach",
-          "reg_id": "6762688"
         }
       ]
     },
@@ -223,17 +203,17 @@
       "coaches": [
         {
           "name": "Kevin Johnston",
-          "position": "13U D Assistant Coach",
+          "position": "13U C Assistant Coach",
           "reg_id": "6132215"
         },
         {
           "name": "Kristen Blair",
-          "position": "13U D Assistant Coach",
+          "position": "13U C Assistant Coach",
           "reg_id": "960266"
         },
         {
           "name": "Kristen Blair",
-          "position": "11U D Assistant Coach",
+          "position": "11U C Assistant Coach",
           "reg_id": "960266"
         }
       ]
@@ -243,7 +223,7 @@
       "coaches": [
         {
           "name": "Kevin Smits",
-          "position": "11U D Assistant Coach",
+          "position": "11U C Assistant Coach",
           "reg_id": "5703067"
         },
         {
