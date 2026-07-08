@@ -1,15 +1,20 @@
 {
-  "last_updated": "2026-07-07T13:00:40.786706",
+  "last_updated": "2026-07-08T12:45:43.773611",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 35,
+  "total_coaches": 29,
   "locals": {
     "Alvinston": {
-      "count": 2,
+      "count": 3,
       "coaches": [
         {
           "name": "Brock Shea",
           "position": "13U DS Head Coach",
           "reg_id": "6679516"
+        },
+        {
+          "name": "Kevin Tizzard",
+          "position": "9U D Head Coach",
+          "reg_id": "6900238"
         },
         {
           "name": "Paul Aarts",
@@ -19,27 +24,12 @@
       ]
     },
     "Blenheim": {
-      "count": 6,
+      "count": 3,
       "coaches": [
-        {
-          "name": "Chris Hill",
-          "position": "11U C Assistant Coach",
-          "reg_id": "1187725"
-        },
-        {
-          "name": "Dave Carey",
-          "position": "11U C Assistant Coach",
-          "reg_id": "6833325"
-        },
         {
           "name": "Jeremy Osborne",
           "position": "18U C Assistant Coach",
           "reg_id": "6491570"
-        },
-        {
-          "name": "Matt Knights",
-          "position": "11U C Assistant Coach",
-          "reg_id": "5612943"
         },
         {
           "name": "Owen Butzer",
@@ -48,25 +38,14 @@
         },
         {
           "name": "Pat Savage",
-          "position": "15U C Assistant Coach",
+          "position": "15U D Assistant Coach",
           "reg_id": "5872722"
         }
       ]
     },
     "Chatham": {
-      "count": 2,
-      "coaches": [
-        {
-          "name": "Chad Recker",
-          "position": "22U B Assistant Coach",
-          "reg_id": "6120702"
-        },
-        {
-          "name": "Shawn Delanghe",
-          "position": "22U B Assistant Coach",
-          "reg_id": "6223183"
-        }
-      ]
+      "count": 0,
+      "coaches": []
     },
     "Corunna": {
       "count": 5,
@@ -87,14 +66,14 @@
           "reg_id": "7140169"
         },
         {
-          "name": "Jason Piper",
-          "position": "9U D Assistant Coach",
-          "reg_id": "6667621"
-        },
-        {
           "name": "Mike Tyndall",
           "position": "SENIOR B Assistant Coach",
           "reg_id": "1228234"
+        },
+        {
+          "name": "Rob Barr",
+          "position": "9U HS Assistant Coach",
+          "reg_id": "7070673"
         }
       ]
     },
@@ -119,17 +98,12 @@
       ]
     },
     "Dutton": {
-      "count": 3,
+      "count": 2,
       "coaches": [
         {
           "name": "Aaron Will",
           "position": "18U DS Assistant Coach",
           "reg_id": "7139343"
-        },
-        {
-          "name": "Dave Galloway",
-          "position": "18U DS Head Coach",
-          "reg_id": "6488404"
         },
         {
           "name": "Erin Lundy",
@@ -139,15 +113,10 @@
       ]
     },
     "Lambton Shores": {
-      "count": 4,
+      "count": 3,
       "coaches": [
         {
-          "name": "Andrew Adams",
-          "position": "11U DS Head Coach",
-          "reg_id": "6825072"
-        },
-        {
-          "name": "Colin Vankessel",
+          "name": "Colin VanKessel",
           "position": "11U DS Assistant Coach",
           "reg_id": "6538803"
         },
@@ -202,17 +171,17 @@
       "count": 3,
       "coaches": [
         {
-          "name": "Kevin Johnston",
+          "name": "KEVIN JOHNSTON",
           "position": "13U C Assistant Coach",
           "reg_id": "6132215"
         },
         {
-          "name": "Kristen Blair",
+          "name": "KRISTEN BLAIR",
           "position": "13U C Assistant Coach",
           "reg_id": "960266"
         },
         {
-          "name": "Kristen Blair",
+          "name": "KRISTEN BLAIR",
           "position": "11U C Assistant Coach",
           "reg_id": "960266"
         }
