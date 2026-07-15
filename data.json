@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-14T12:37:54.573748",
+  "last_updated": "2026-07-15T12:39:36.438024",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 29,
+  "total_coaches": 24,
   "locals": {
     "Alvinston": {
       "count": 3,
@@ -98,13 +98,8 @@
       ]
     },
     "Dutton": {
-      "count": 2,
+      "count": 1,
       "coaches": [
-        {
-          "name": "Aaron Will",
-          "position": "18U DS Assistant Coach",
-          "reg_id": "7139343"
-        },
         {
           "name": "Erin Lundy",
           "position": "18U DS Assistant Coach",
@@ -113,42 +108,22 @@
       ]
     },
     "Lambton Shores": {
-      "count": 3,
+      "count": 1,
       "coaches": [
-        {
-          "name": "Colin VanKessel",
-          "position": "11U DS Assistant Coach",
-          "reg_id": "6538803"
-        },
         {
           "name": "Jeff Rutledge",
           "position": "9U DS Assistant Coach",
           "reg_id": "6772899"
-        },
-        {
-          "name": "Phil Kerrigan",
-          "position": "11U DS Assistant Coach",
-          "reg_id": "6613905"
         }
       ]
     },
     "Port Lambton": {
-      "count": 3,
+      "count": 1,
       "coaches": [
         {
           "name": "Allan Hillis",
           "position": "18U B Assistant Coach",
           "reg_id": "5680913"
-        },
-        {
-          "name": "Brian Riedel",
-          "position": "SENIOR B Assistant Coach",
-          "reg_id": "5855121"
-        },
-        {
-          "name": "Jamie Donahue",
-          "position": "15U D Assistant Coach",
-          "reg_id": "1106206"
         }
       ]
     },
@@ -171,18 +146,18 @@
       "count": 3,
       "coaches": [
         {
-          "name": "KEVIN JOHNSTON",
+          "name": "Kevin Johnston",
           "position": "13U C Assistant Coach",
           "reg_id": "6132215"
         },
         {
-          "name": "KRISTEN BLAIR",
-          "position": "13U C Assistant Coach",
+          "name": "Kristen Blair",
+          "position": "11U C Assistant Coach",
           "reg_id": "960266"
         },
         {
-          "name": "KRISTEN BLAIR",
-          "position": "11U C Assistant Coach",
+          "name": "Kristen Blair",
+          "position": "13U C Assistant Coach",
           "reg_id": "960266"
         }
       ]
