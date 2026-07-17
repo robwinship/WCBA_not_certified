@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-07-16T12:43:40.493399",
+  "last_updated": "2026-07-17T12:36:35.212861",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 24,
+  "total_coaches": 29,
   "locals": {
     "Alvinston": {
       "count": 3,
@@ -24,8 +24,18 @@
       ]
     },
     "Blenheim": {
-      "count": 3,
+      "count": 6,
       "coaches": [
+        {
+          "name": "Anderson Fenton",
+          "position": "13U C Assistant Coach",
+          "reg_id": "0"
+        },
+        {
+          "name": "Brad Vannieuwenhuyze",
+          "position": "11U C Assistant Coach",
+          "reg_id": "7143137"
+        },
         {
           "name": "Jeremy Osborne",
           "position": "18U C Assistant Coach",
@@ -40,6 +50,11 @@
           "name": "Pat Savage",
           "position": "15U D Assistant Coach",
           "reg_id": "5872722"
+        },
+        {
+          "name": "Stu Schaafsma",
+          "position": "15U D Assistant Coach",
+          "reg_id": "6284515"
         }
       ]
     },
@@ -78,7 +93,7 @@
       ]
     },
     "Dresden": {
-      "count": 3,
+      "count": 4,
       "coaches": [
         {
           "name": "Dave Cameron",
@@ -94,6 +109,11 @@
           "name": "Kurt Holmes",
           "position": "SENIOR C Assistant Coach",
           "reg_id": "6123003"
+        },
+        {
+          "name": "Tim Bentley",
+          "position": "SENIOR C Assistant Coach",
+          "reg_id": "6147546"
         }
       ]
     },
@@ -108,14 +128,8 @@
       ]
     },
     "Lambton Shores": {
-      "count": 1,
-      "coaches": [
-        {
-          "name": "Jeff Rutledge",
-          "position": "9U DS Assistant Coach",
-          "reg_id": "6772899"
-        }
-      ]
+      "count": 0,
+      "coaches": []
     },
     "Port Lambton": {
       "count": 1,
@@ -128,17 +142,22 @@
       ]
     },
     "Sarnia": {
-      "count": 2,
+      "count": 3,
       "coaches": [
-        {
-          "name": "Ben Murray",
-          "position": "9U DS Assistant Coach",
-          "reg_id": "7092900"
-        },
         {
           "name": "Bruce Gray",
           "position": "22U AAA Assistant Coach",
           "reg_id": "616329"
+        },
+        {
+          "name": "Hilary McIntosh",
+          "position": "13U HS Assistant Coach",
+          "reg_id": "7092385"
+        },
+        {
+          "name": "Malcolm Verstraten",
+          "position": "22U AAA Assistant Coach",
+          "reg_id": "0"
         }
       ]
     },
@@ -146,24 +165,24 @@
       "count": 3,
       "coaches": [
         {
-          "name": "Kevin Johnston",
+          "name": "KEVIN JOHNSTON",
           "position": "13U C Assistant Coach",
           "reg_id": "6132215"
         },
         {
-          "name": "Kristen Blair",
+          "name": "KRISTEN BLAIR",
           "position": "11U C Assistant Coach",
           "reg_id": "960266"
         },
         {
-          "name": "Kristen Blair",
+          "name": "KRISTEN BLAIR",
           "position": "13U C Assistant Coach",
           "reg_id": "960266"
         }
       ]
     },
     "Wyoming": {
-      "count": 2,
+      "count": 3,
       "coaches": [
         {
           "name": "Kevin Smits",
@@ -174,6 +193,11 @@
           "name": "Stephen Szmiett",
           "position": "9U D Assistant Coach",
           "reg_id": "6754464"
+        },
+        {
+          "name": "Tom Wheeler",
+          "position": "SENIOR AA Assistant Coach",
+          "reg_id": "6229837"
         }
       ]
     }
