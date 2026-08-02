@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-01T12:26:21.881229",
+  "last_updated": "2026-08-02T12:31:54.968968",
   "updates_at": "8:00 AM Eastern",
-  "total_coaches": 18,
+  "total_coaches": 28,
   "locals": {
     "Alvinston": {
       "count": 3,
@@ -127,20 +127,74 @@
       "coaches": []
     },
     "Port Lambton": {
-      "count": 0,
-      "coaches": []
+      "count": 1,
+      "coaches": [
+        {
+          "name": "Allan Hillis",
+          "position": "18U B Assistant Coach",
+          "reg_id": "5680913"
+        }
+      ]
     },
     "Sarnia": {
-      "count": 0,
-      "coaches": []
+      "count": 3,
+      "coaches": [
+        {
+          "name": "Bruce Gray",
+          "position": "22U AAA Assistant Coach",
+          "reg_id": "616329"
+        },
+        {
+          "name": "Hilary Mcintosh",
+          "position": "13U HS Assistant Coach",
+          "reg_id": "7092385"
+        },
+        {
+          "name": "Malcolm Verstraten",
+          "position": "22U AAA Assistant Coach",
+          "reg_id": "0"
+        }
+      ]
     },
     "Wallaceburg": {
-      "count": 0,
-      "coaches": []
+      "count": 3,
+      "coaches": [
+        {
+          "name": "Kevin Johnston",
+          "position": "13U C Assistant Coach",
+          "reg_id": "6132215"
+        },
+        {
+          "name": "Kristen Blair",
+          "position": "13U C Assistant Coach",
+          "reg_id": "960266"
+        },
+        {
+          "name": "Kristen Blair",
+          "position": "11U C Assistant Coach",
+          "reg_id": "960266"
+        }
+      ]
     },
     "Wyoming": {
-      "count": 0,
-      "coaches": []
+      "count": 3,
+      "coaches": [
+        {
+          "name": "Kevin Smits",
+          "position": "11U C Assistant Coach",
+          "reg_id": "5703067"
+        },
+        {
+          "name": "Stephen Szmiett",
+          "position": "9U D Assistant Coach",
+          "reg_id": "6754464"
+        },
+        {
+          "name": "Tom Wheeler",
+          "position": "SENIOR AA Assistant Coach",
+          "reg_id": "6229837"
+        }
+      ]
     }
   }
 }
